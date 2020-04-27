@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>BATTLEFILD 2</title>
+	<link rel="stylesheet" href="../css/battlefield.css" type="text/css" />
+</head>
+<body>
+	<div class="header">head</div>
+	<div class="content">
+		<div class="bar">
+			<div class="inner-bar" id="nAv" >
+				<a href="#" class="icon" id="menu">MENU&emsp;&nabla;</a>
+				<a href="../index.html">HOME</a>
+				<a href="table.html" title="Пример табличной верстки.">TABLE</a>
+				<a href="battlefield.html" class="active">BATTLEFIELD 2</a>
+				<a href="HTML5-Snake.html">SNAKE</a>
+				<a href="music.html">MUSIC</a>
+			</div>
+		</div>
+		<div class="main">
+			<h2>&ensp;&emsp;Battlefield 2: Редактирование оружия</h2>
+			<h4>
+				<p>Открываем архив Objects_server.zip в директории C:/program files/Battlefied 2/mods/bf2. </p>
+				<p>Заходим в Weapons -> Handheld и там появляются папки с оружием. открываем любую из них,</p>
+				<p>
+					Возьмём для начала, файл: RURIF_AK47.tweak <br>
+					Cначала правым кликом выбрав свойства снимите галочку "Только чтение", потом верните. <br>
+					1. ObjectTemplate.fire.roundsPerMinute 550 - скорострельность <br>
+					2. ObjectTemplate.fire.addFireRate 2 - автоматический режим стрельбы <br>
+					&ensp;&emsp;ObjectTemplate.fire.addFireRate 1 - стрельба короткой очередью <br>
+					&ensp;&emsp;ObjectTemplate.fire.addFireRate 0 - одиночный выстрел <br>
+					3. ObjectTemplate.ammo.nrOfMags 5 - кол-во обойм (если поставить -1 , то будет бесконечный боезапас) <br>
+					4. ObjectTemplate.ammo.magSize 40 - кол-во патронов в обойме <br>
+					5. ObjectTemplate.ammo.reloadTime 3.3 - время на затрачиваемое на перезарядку (даже если её снизить анимация будет ещё визуально выполнять действие, хотя перезарядка закончится) <br>
+					6. ObjectTemplate.recoil.hasRecoilForce 1 - отдача оружия (0 - без отдачи) Анимация будет работать однако прицел останется на месте <br>
+					7. ObjectTemplate.deviation.devModStand 0.9 - разброс пуль стоя <br>
+					&ensp;&emsp;ObjectTemplate.deviation.devModCrouch 0.6 - разброс пуль сидя <br>
+					&ensp;&emsp;ObjectTemplate.deviation.devModLie 0.4 - разброс пуль лёжа <br>
+					&ensp;&emsp;ObjectTemplate.deviation.devModZoom 0.2 - разброс пуль глядя в прицел <br>
+					8. ObjectTemplate.minDamage 8 - минимальный ущербObjectTemplate.damage 40 - максимальный ущерб
+				</p>
+			</h4>
+			<h3 id="prim">Примечание&nabla;</h3>
+			<h4 id="h-prim" class="a">						
+				Бывает,что в некоторых файлах оружия нет некоторых из выше перечисленных строк. Не отчаивайтесь а просто добавьте эту строку, но будьте осторожны определённую строчку надо вставлять в определённую графу, например:Так должна выглядеть графа касающаяся скорострельности и режимов ведения стрельбы: <br>
+				<br>rem ---BeginComp:SingleFireComp --- <br>
+				ObjectTemplate.createComponent SingleFireComp <br>
+				ObjectTemplate.fire.roundsPerMinute 550 <br>
+				ObjectTemplate.fire.addFireRate 2 <br>
+				ObjectTemplate.fire.addFireRate 1 <br>
+				ObjectTemplate.fire.addFireRate 0 <br>
+				ObjectTemplate.fire.fireInCameraDof 1 <br>
+				rem ---EndComp --- <br>
+				<br>Так выглядит графа о кол-ве обойм, патронов в обойме, времени перезарядки:<br>
+				<br>rem ---BeginComp:DefaultAmmoComp --- <br>
+				ObjectTemplate.createComponent DefaultAmmoComp <br>
+				ObjectTemplate.ammo.nrOfMags -1 <br>
+				ObjectTemplate.ammo.magSize 40 <br>
+				ObjectTemplate.ammo.ammoType 1 <br>
+				ObjectTemplate.ammo.reloadTime 3.3 <br>
+				rem ---EndComp ---
+			</h4>
+			<h4><p>Удачи!!!</p></h4>
+		</div>
+	</div>
+	<div class="footer">footer</div>
+	
+	<script src="../js/script.js"></script>
+	
+</body>
+</html>
