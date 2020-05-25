@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+   <meta name="description" content="это краткое описание сайта. Строка первой покажется в результатах поиска">
+   <meta name="keywords" content="ключевые слова для поисковиков">
+   <title>о летучести</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         border: 0;
+      }
+
+      body {
+         padding: 0;
+         background: #EECFBA;
+         color: red;
+         font-family: Bradley Hand, cursive;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      .group:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      #logo img {
+         width: 100%;
+         height: 200px;
+      }
+
+      #nav {
+         background-image: linear-gradient(0deg, #EECFBA, #16110D);
+         font-weight: bold;
+         display: flex;
+         justify-content: center;
+      }
+
+      #nav ul {
+         list-style-type: none;
+      }
+
+      #nav li {
+         display: inline;
+      }
+
+      #nav li a {
+         color: #009800;
+         padding: 0 5px;
+      }
+
+      #nav li a:hover {
+         color: #f00;
+         background-image: radial-gradient(yellow, #009800);
+         border-radius: 5px;
+      }
+
+      .scroll {
+         /*	display: inline-flex;*/
+         width: 960px;
+      }
+
+      #text {
+         width: 545px;
+         font-size: .8em;
+         color: #333;
+         margin: 0 auto;
+      }
+
+      #text p {
+         text-indent: 1.5em;
+         margin: 0;
+      }
+
+      #members {
+         background: #2f7c9a;
+         width: 300px;
+         height: auto;
+         float: left;
+      }
+
+      #members h2 {
+         color: #f60;
+         font-size: 120%;
+         font-weight: bold;
+         text-align: center;
+      }
+
+      #members ol {
+         color: #f00;
+         font-size: 21px;
+         padding-left: 40px;
+      }
+
+      #members li {
+         margin: 0 5px;
+      }
+
+      #members li a {
+         color: #0c0;
+      }
+
+      #members li a:hover {
+         color: #f00;
+      }
+
+      #news {
+         background: #ffc;
+         width: 187px;
+         color: #665;
+         margin: 0 5px 0 0;
+         padding: 2px;
+         float: right;
+      }
+
+      #news h3 {
+         color: #f60;
+         font-size: 120%;
+         font-weight: bold;
+         text-align: center;
+      }
+
+      #news ul {
+         list-style: inside;
+      }
+
+      #news li {
+         font-size: 75%;
+         padding: 5px 10px;
+      }
+
+      #footer {
+         background: #665;
+         color: #fff;
+         font-size: 70%;
+         padding: 5px;
+         /*width: 100%;	*/
+         /*position: absolute;*/
+         /*bottom: 0;*/
+      }
+
+      #footer a {
+         color: #ff0;
+      }
+
+      #footer a:hover {
+         color: #f00;
+      }
+
+      #footer p {
+         padding: 2px;
+         text-align: center;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div id="logo"><img src="img/ass.jpg" alt="image"></div>
+   <div id="nav">
+      <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="#">ссылка</a></li>
+         <li><a href="#">ссылка</a></li>
+         <li><a href="#">ссылка</a></li>
+      </ul>
+   </div>
+   <div class="scroll">
+      <div id="text">
+         <p>Летать всегда! Летать везде! Летать много, очень-очень много и всегда с улыбкой на морде лица — вот наше
+            кредо!</p>
+      </div>
+      <div class="group">
+         <div id="members">
+            <h2>Список новых учаснегов:</h2>
+            <ol>
+               <li><a href="#">Рыжий</a></li>
+               <li><a href="#">Брат Корнелий</a> </li>
+               <li><a href="#">Муха</a></li>
+               <li><a href="#">Пигфлай</a></li>
+               <li><a href="#">Нигга Боб</a></li>
+               <li><a href="#">Помидорка</a></li>
+               <li><a href="#">Косолапыч</a></li>
+               <li><a href="#">Тушка</a></li>
+               <li><a href="#">Свин Полезный</a></li>
+               <li><a href="#">Сало</a></li>
+               <li><a href="#">Кнопка</a></li>
+               <li><a href="#">Васёк</a></li>
+            </ol>
+         </div>
+         <div id="news">
+            <h3>Самые распоследние новости:</h3>
+            <ul>
+               <li>Всю прошедшую неделю лил жуткий дождь, и полёты временно приостановились. Самые безбашенные пиггасы,
+                  однако, всё равно кучковались стаями на проводах местной радиолинии и дружно создавали помехи.
+                  Малаццы!</li>
+               <li>Пиггас Хмурый Пятак снова хмурый. Обещал всех урыть. Злой сильно.</li>
+               <li>У нашего друга Боббса завтра ДР! Поздравления и подарочки просил вручать возле новой будки и
+                  непременно на виду у соседского пса Мухомора, чтобы тому завидно стало. Пляски намечаются до самого
+                  утра. При наличии на небе луны — будет весело.</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div id="footer">
+      <p>Главная | <a href="#">ссылка</a> | <a href="#">ссылка</a> | <a href="#">ссылка</a></p>
+      <p>© 2019
+         | All rights not reserved.
+         | <a href=#>HTML</a>
+         | <a href=#>CSS</a>
+         | e-mail: <a href="#"></a>
+      </p>
+   </div>
+</body>
+
+</html>

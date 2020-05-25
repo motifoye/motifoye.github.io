@@ -7,11 +7,11 @@ var
 	canv 				= document.getElementById('mc'), // canvas
 	ctx					= canv.getContext('2d'), // 2d context
 	gs = fkp			= false, // game started && first key pressed (initialization states)
-	speed = baseSpeed 	= 7, // snake movement speed
+	speed = baseSpeed 	= 5, // snake movement speed
 	xv = yv				= 0, // velocity (x & y)
 	px 					= ~~(canv.width) / 2, // player X position
 	py 					= ~~(canv.height) / 2, // player Y position
-	pw = ph				= 14, // player size
+	pw = ph				= 8, // player size
 	aw = ah				= 10, // apple size
 	apples				= [], // apples list
 	trail				= [], // tail elements list (aka trail)
