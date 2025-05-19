@@ -1,93 +1,832 @@
-<!doctype html>
-<html lang="ru">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>TTQRES</title>
-</head>
-
-<body>
-    <!-- header  -->
-    <header class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
-        <div class="container-md">
-            <span class="navbar-brand mr-sm-5" aria-label="TTQRES">TTQRES</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./html/HTML5-Snake.html" class="nav-link">Game</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./html/table.html" class="nav-link">From the past</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./html/about.html" class="nav-link" aria-label="About us">About us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
-    <!-- body  -->
-    <main style="height: 1000px;background-color: rgb(200, 200, 200);">
-        <div class="container-fluid  text-body">
-            <div class="d-flex justify-content-center">
-                <h1>пусто</h1>
-            </div>
-        </div>
-    </main>
-
-
-    <!-- footer  -->
-    <footer class="p-3 text-muted text-center text-small bg-secondary">
-        <div class="container ">
-            <p class="text-light">TTQRES</p>
-             <p>Копирование материалов с данного сайта возможно только с разрешения администрации сайта
-                <br>и при указании прямой активной ссылки на источник.
-            </p> 
-        </div>
-        <div class="d-sm-flex justify-content-around">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a class="text-warning" href="https://github.com/MOTifoYe" target="_blank">GitHub</a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="text-warning" href="https://getbootstrap.com" target="_blank">Bootstrap</a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="text-warning" href="./html/about.html">About us</a>
-                </li>
-            </ul>
-        </div>
-        <p class="text-light">Copyright © 2020</p>
-    </footer>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-        </script>
-</body>
-
-</html>
+    <html>
+    <head>
+        <title>Questions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+            .answers { margin-left: 20px; }
+            .correct { color: green; }
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+    
+        <div class="question">
+            <h3>Вопрос 1</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа <span lang="EN-US">long</span><span lang="EN-US">long </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class=""><p>4</p></div><div class="correct"><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 2</h3>
+            <div class="question-text"><p>Сколько байт занимает в памяти массив int a[10] в 32-битном компиляторе языка С?</p></div>
+            <div class="answers">
+        <div class="correct"><p>40</p></div><div class=""><p>20</p></div><div class=""><p>80</p></div><div class=""><p>10</p></div><div class=""><p>160</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 3</h3>
+            <div class="question-text"><p>Сколько байт занимает в памяти массив float a[10] в 32-битном компиляторе языка С?</p></div>
+            <div class="answers">
+        <div class="correct"><p>40</p></div><div class=""><p>20</p></div><div class=""><p>80</p></div><div class=""><p>10</p></div><div class=""><p>160</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 4</h3>
+            <div class="question-text"><p>Сколько байт занимает в памяти массив double a[10] в 32-битном компиляторе языка С?</p></div>
+            <div class="answers">
+        <div class=""><p>40</p></div><div class=""><p>20</p></div><div class="correct"><p>80</p></div><div class=""><p>10</p></div><div class=""><p>160</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 5</h3>
+            <div class="question-text"><p>Количеств различных значений объекта типа char 32 битном компиляторе языка С равно</p></div>
+            <div class="answers">
+        <div class="correct"><p>256</p></div><div class=""><p>1024</p></div><div class=""><p>65536 </p></div><div class=""><p>4 294 967 296</p></div><div class=""><p>16 777 216</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 6</h3>
+            <div class="question-text"><p>Количеств различных значений объекта типа unsigned short в 32 битном компиляторе языка C равно</p></div>
+            <div class="answers">
+        <div class=""><p>256</p></div><div class=""><p>1024</p></div><div class="correct"><p>65536 </p></div><div class=""><p>4 294 967 296</p></div><div class=""><p>16 777 216</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 7</h3>
+            <div class="question-text"><p>Количеств различных значений объекта типа unsigned int в 32 битном компиляторе языка C равно</p></div>
+            <div class="answers">
+        <div class=""><p>256</p></div><div class=""><p>1024</p></div><div class=""><p>65536 </p></div><div class="correct"><p>4 294 967 296</p></div><div class=""><p>16 777 216</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 8</h3>
+            <div class="question-text"><p>Количеств различных значений объекта типа unsigned long в 32 битном компиляторе языка C равно</p></div>
+            <div class="answers">
+        <div class=""><p>256</p></div><div class=""><p>1024</p></div><div class=""><p>65536 </p></div><div class="correct"><p>4 294 967 296</p></div><div class=""><p>16 777 216</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 9</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа <span lang="EN-US">long</span><span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class="correct"><p>4</p></div><div class=""><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 10</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа int<span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class="correct"><p>4</p></div><div class=""><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 11</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа short int<span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class="correct"><p>2</p></div><div class=""><p>4</p></div><div class=""><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 12</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа char<span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class="correct"><p>один</p></div><div class=""><p>два</p></div><div class=""><p>четыре</p></div><div class=""><p>восемь</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 13</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа float<span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class="correct"><p>4</p></div><div class=""><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 14</h3>
+            <div class="question-text"><p>В 32-битном компиляторе языка С++ размер типа double<span lang="EN-US"> </span>в байтах составляет</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class=""><p>4</p></div><div class="correct"><p>8</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 15</h3>
+            <div class="question-text"><p>Какой тип занимает меньше всего памяти в 32-битном компиляторе языка С?</p></div>
+            <div class="answers">
+        <div class="correct"><p>char</p></div><div class=""><p>short</p></div><div class=""><p>float</p></div><div class=""><p>double</p></div><div class=""><p>long</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 16</h3>
+            <div class="question-text"><p>Какой тип занимает больше всего памяти в 32-битном компиляторе языка С?</p></div>
+            <div class="answers">
+        <div class="correct"><p>double</p></div><div class=""><p>short</p></div><div class=""><p>float</p></div><div class=""><p>int</p></div><div class=""><p>long</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 17</h3>
+            <div class="question-text"><p>Как записывается оператор потокового вывода?</p></div>
+            <div class="answers">
+        <div class=""><p>printf</p></div><div class=""><p>scanf</p></div><div class="correct"><p>cout</p></div><div class=""><p>cin</p></div><div class=""><p>iostream</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 18</h3>
+            <div class="question-text"><p>Как записывается оператор форматированного ввода?</p></div>
+            <div class="answers">
+        <div class=""><p>printf</p></div><div class="correct"><p>scanf</p></div><div class=""><p>cout</p></div><div class=""><p>cin</p></div><div class=""><p>iostream</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 19</h3>
+            <div class="question-text"><p>Как записывается оператор форматированного вывода?</p></div>
+            <div class="answers">
+        <div class="correct"><p>printf</p></div><div class=""><p>scanf</p></div><div class=""><p>cout</p></div><div class=""><p>cin</p></div><div class=""><p>iostream</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 20</h3>
+            <div class="question-text"><p>Как записывается оператор потокового ввода?</p></div>
+            <div class="answers">
+        <div class=""><p>printf</p></div><div class=""><p>scanf</p></div><div class=""><p>cout</p></div><div class="correct"><p>cin</p></div><div class=""><p>iostream</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 21</h3>
+            <div class="question-text"><p>Какой заголовочный файл надо включить для использования функция pow?</p></div>
+            <div class="answers">
+        <div class="correct"><p>math.h</p></div><div class=""><p>stdlib.h</p></div><div class=""><p>stdio.h</p></div><div class=""><p>iostream</p></div><div class=""><p>conio.h</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 22</h3>
+            <div class="question-text"><p>Какой заголовочный файл надо включить для использования функция printf?</p></div>
+            <div class="answers">
+        <div class=""><p>math.h</p></div><div class=""><p>stdlib.h</p></div><div class="correct"><p>stdio.h</p></div><div class=""><p>iostream</p></div><div class=""><p>conio.h</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 23</h3>
+            <div class="question-text"><p>Чтобы подключить файл в программу на С++, например math.h или iostream необходимо написать:</p></div>
+            <div class="answers">
+        <div class="correct"><p><span style="color: #e83e8c; font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 14px;">#include &lt;math.h&gt;</span></p>
+<p> </p>
+<p> </p></div><div class=""><p><code><span lang="SV">#define &lt;math.h&gt;</span></code></p></div><div class=""><p><span style="color: #e83e8c; font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 14px;">#include (iostream)</span></p>
+<p> </p>
+<p> </p></div><div class=""><p><code><span lang="SV">include #iostream;</span></code></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 24</h3>
+            <div class="question-text"><p>Какой из перечисленных типов данных не является типом данных в С?</p></div>
+            <div class="answers">
+        <div class=""><p>float</p></div><div class="correct"><p>real</p></div><div class=""><p>double</p></div><div class=""><p>char</p></div><div class=""><p>все являются</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 25</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Какой из ниже перечисленных операторов, не является циклом в С?</span></p></div>
+            <div class="answers">
+        <div class=""><p>while</p></div><div class=""><p>for</p></div><div class=""><p>do while</p></div><div class="correct"><p>repeat until</p></div><div class="correct"><p>switch</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 26</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Какой из ниже перечисленных операторов, является циклом в С?</span></p></div>
+            <div class="answers">
+        <div class="correct"><p>while</p></div><div class="correct"><p>for</p></div><div class="correct"><p>do while</p></div><div class=""><p>repeat until</p></div><div class=""><p>switch</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 27</h3>
+            <div class="question-text"><p>Когда будут выполняться операторы в теле цикла while (x != 100)?</p></div>
+            <div class="answers">
+        <div class=""><p>пока х меньше 100</p></div><div class=""><p>пока х больше 100</p></div><div class=""><p>пока х равно 100</p></div><div class="correct"><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 28</h3>
+            <div class="question-text"><p>В каком случае будут выполняться операторы в теле цикла while (x = 100)?</p></div>
+            <div class="answers">
+        <div class=""><p>пока х меньше 100</p></div><div class=""><p>пока х больше 100</p></div><div class=""><p>пока х равно 100</p></div><div class="correct"><p>бесконечный цикл</p></div><div class=""><p>синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 29</h3>
+            <div class="question-text"><p>Оператор continue служит для:</p></div>
+            <div class="answers">
+        <div class=""><p>перехода на любой помеченный оператор в теле функции</p></div><div class=""><p>принудительного выхода из цикла или переключателя</p></div><div class="correct"><p>перехода к следующей итерации в операторах цикла</p></div><div class=""><p>принудительного продолжения выполнения цикла</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 30</h3>
+            <div class="question-text"><p>Оператор break служит для:</p></div>
+            <div class="answers">
+        <div class=""><p> </p>
+<p>перехода на любой помеченный оператор в теле функции</p>
+<p> </p>
+<p> </p></div><div class="correct"><p> </p>
+<p>принудительного выхода из цикла или переключателя</p>
+<p> </p>
+<p> </p></div><div class=""><p> </p>
+<p>перехода к следующей итерации в операторах цикла</p>
+<p> </p>
+<p> </p></div><div class=""><p>принудительного продолжения выполнения цикла</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 31</h3>
+            <div class="question-text"><p>Оператор goto служит для:</p></div>
+            <div class="answers">
+        <div class="correct"><p>перехода на любой помеченный оператор в теле только той же функции</p></div><div class=""><p>перехода на любой помеченный оператор в теле любой функции</p></div><div class=""><p>перехода к следующей итерации в операторах цикла</p></div><div class=""><p>принудительного продолжения выполнения цикла</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 32</h3>
+            <div class="question-text"><p>Для перехода в произвольное место в теле функции можно использовать оператор</p></div>
+            <div class="answers">
+        <div class=""><p>continue</p></div><div class="correct"><p>goto</p></div><div class=""><p>break</p></div><div class=""><p>return</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 33</h3>
+            <div class="question-text"><p>Оператор return служит для:</p></div>
+            <div class="answers">
+        <div class="correct"><p>завершения функции</p></div><div class=""><p>завершения цикла</p></div><div class=""><p>вызова функции</p></div><div class=""><p>присваивания значения переменной</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 34</h3>
+            <div class="question-text"><p>В приведённом коде измените  один символ чтобы вывести 20 звёздочек </p>
+<p><img src="images/71.png?time=1716280948481" alt="" width="203" height="131" /></p>
+<p><code><span lang="SV"> </span></code></p></div>
+            <div class="answers">
+        <div class=""><p><code><span lang="SV">i = 0 -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i = 1</span></code></p></div><div class=""><p><code><span lang="SV">i = 0 -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i </span><span lang="EN-US">=</span><span lang="SV">40</span></code></p></div><div class=""><p><code><span lang="SV">i</span><span lang="EN-US"> &lt; </span><span lang="SV">N</span><span lang="SV"> -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i</span><span lang="EN-US">&gt; </span><span lang="SV">N</span></code></p></div><div class=""><p><code><span lang="SV">i</span><span lang="EN-US"> &lt; </span><span lang="SV">N</span><span lang="SV"> -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i</span><span lang="EN-US">&gt; </span><span lang="SV">N</span></code></p></div><div class="correct"><p><code><span lang="SV">i-- -&gt;</span></code><code><span lang="SV"> N--</span></code></p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 35</h3>
+            <div class="question-text"><p>В приведённом коде измените  один символ чтобы напечатать 20 звёздочек - *.</p>
+<p><img src="images/62.png" alt="" width="203" height="131" /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p><code><span lang="SV">i = 20 -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i = 0</span></code></p></div><div class=""><p><code><span lang="SV">i = 20 -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i </span><span lang="EN-US">=</span><span lang="SV">40</span></code></p></div><div class=""><p><code><span lang="SV">i</span><span lang="EN-US"> &gt; </span><span lang="SV">N</span><span lang="SV"> -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i</span><span lang="EN-US">&gt;= </span><span lang="SV">N</span></code></p></div><div class=""><p><code><span lang="SV">i</span><span lang="EN-US"> &gt; </span><span lang="SV">N</span><span lang="SV"> -&gt;</span></code><code><span lang="SV"> </span><span lang="SV">i</span><span lang="SV"> &lt;</span><span lang="EN-US"> </span><span lang="SV">N</span></code></p></div><div class="correct"><p><code><span lang="SV">i++ -&gt;</span></code><code><span lang="SV"> N++</span></code></p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 36</h3>
+            <div class="question-text"><p>Что будет напечатано?</p>
+<p><img src="images/63.png" alt="" width="456" height="322" /></p>
+<p><code><span lang="EN-US">    </span></code><code><span lang="EN-US"><br /></span></code></p></div>
+            <div class="answers">
+        <div class=""><p>011.2.<span lang="EN-US">D</span></p></div><div class=""><p><span lang="FR">01.2.D.</span></p></div><div class=""><p><span lang="FR">0.1.2.D.</span></p></div><div class="correct"><p><span lang="FR">0112.D</span><span lang="EN-US">.</span></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 37</h3>
+            <div class="question-text"><p>Что выведет следующий фрагмента кода на языке С++?</p>
+<p><img src="images/64.png" alt="" width="203" height="228" /></p>
+<p><span style="background-color: #ffffff; color: #ff00ff;" lang="EN-US"> </span></p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p> 0 </p></div><div class=""><p> <span lang="FR">1</span></p></div><div class=""><p> <span lang="FR">2</span></p></div><div class=""><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 38</h3>
+            <div class="question-text"><p> Какое значение будет выведено?</p>
+<p><img src="images/65.png?time=1716282520987" alt="" width="210" height="277" /></p>
+<p><code><span lang="FR">   </span></code><code><span lang="FR"><br /></span></code></p></div>
+            <div class="answers">
+        <div class=""><p> 0 </p></div><div class="correct"><p><span lang="FR">1</span> </p></div><div class=""><p> <span lang="FR">2</span> </p></div><div class=""><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 39</h3>
+            <div class="question-text"><p> Какое значение будет напечатано?</p>
+<p><img src="images/66.png" alt="" width="205" height="262" /></p>
+<p><code><span lang="FR">   </span></code><code><span lang="FR"><br /></span></code></p></div>
+            <div class="answers">
+        <div class=""><p> </p>
+<p>0</p>
+<p> </p>
+<p> </p></div><div class=""><p><span lang="FR">1</span></p>
+<p> </p>
+<p> </p></div><div class="correct"><p> <span lang="FR">2</span></p></div><div class=""><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 40</h3>
+            <div class="question-text"><p> Какое значение будет напечатано?</p>
+<p><img src="images/67.png" alt="" width="220" height="279" /></p>
+<p><code><span lang="FR">   </span></code><code><span lang="FR"><br /></span></code></p></div>
+            <div class="answers">
+        <div class=""><p> 0</p>
+<p> </p>
+<p> </p></div><div class=""><p><span lang="FR">1</span></p>
+<p> </p>
+<p> </p></div><div class=""><p> <span lang="FR">2</span></p>
+<p> </p>
+<p> </p></div><div class="correct"><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 41</h3>
+            <div class="question-text"><p> Какое значение будет напечатано?</p>
+<p><img src="images/68.png" alt="" width="206" height="280" /></p>
+<p><code><span lang="FR">  </span></code></p></div>
+            <div class="answers">
+        <div class=""><p> 0</p>
+<p> </p>
+<p> </p></div><div class=""><p><span lang="FR">1</span></p>
+<p> </p>
+<p> </p></div><div class="correct"><p> <span lang="FR">2</span></p>
+<p> </p>
+<p> </p></div><div class=""><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 42</h3>
+            <div class="question-text"><p> Какое значение будет выведено?</p>
+<p><img src="images/69.png" alt="" width="215" height="263" /></p>
+<p> </p>
+<p><code><span lang="FR">  </span></code></p></div>
+            <div class="answers">
+        <div class=""><p> 0</p>
+<p> </p>
+<p> </p></div><div class=""><p><span lang="FR">1</span></p>
+<p> </p>
+<p> </p></div><div class=""><p> <span lang="FR">2</span></p>
+<p> </p>
+<p> </p></div><div class="correct"><p>3</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 43</h3>
+            <div class="question-text"><p>Сколько итераций совершит цикл:</p>
+<p><img src="images/71.png" alt="" width="325" height="33" /></p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>4</p></div><div class="correct"><p>это бесконечный цикл</p></div><div class=""><p>ни одной</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 44</h3>
+            <div class="question-text"><p> Какое значение выведет оператор cout? </p>
+<p><img src="images/710.png" alt="" width="476" height="40" /></p>
+<p><span lang="EN-US"> </span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>0</p></div><div class=""><p>12</p></div><div class=""><p>10</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 45</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Сколько итераций совершит цикл:</span></p>
+<p><span style="font-size: 1rem;"><img src="images/72.png" alt="" width="320" height="45" /></span></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>6</p></div><div class="correct"><p>2</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 46</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Сколько итераций совершит цикл, если все всем использованным переменным присвоен ранее тип int:</span></p>
+<p><img src="images/73.png" alt="" width="325" height="33" /></p>
+<p><span lang="EN-US"> </span></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>4</p></div><div class=""><p>ни одной</p></div><div class="correct"><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 47</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Сколько итераций совершит цикл:</span></p>
+<p><img src="images/74.png?time=1716283704268" alt="" width="256" height="34" /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>4</p></div><div class="correct"><p>ни одной</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 48</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Сколько итераций совершит цикл:</span></p>
+<p><img src="images/75.png" alt="" width="325" height="33" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>4</p></div><div class=""><p>ни одной</p></div><div class="correct"><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 49</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Сколько итераций совершит цикл:</span></p>
+<p><img src="images/76.png" alt="" width="325" height="33" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>3</p></div><div class=""><p>4</p></div><div class=""><p>ни одной</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 50</h3>
+            <div class="question-text"><p> Сколько итераций совершит цикл:</p>
+<p><img src="images/77.png" alt="" width="325" height="33" /></p>
+<p><span style="font-size: 1rem;"> </span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>3</p></div><div class=""><p>4</p></div><div class=""><p>ни одной</p></div><div class=""><p>это бесконечный цикл</p></div><div class="correct"><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 51</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Чему будет равна переменная a, после выполнения этого кода</span></p>
+<p><span style="font-size: 1rem;">int a; for(a = 0; a &lt; 10; a++);</span></p>
+<p><span lang="EN-US"> </span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>9</p></div><div class="correct"><p>10</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 52</h3>
+            <div class="question-text"><p> Чему будет равна переменная a, после выполнения этого кода</p>
+<p><img src="images/79.png" alt="" width="476" height="40" /></p>
+<p><span lang="EN-US"> </span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class="correct"><p>12</p></div><div class=""><p>10</p></div><div class=""><p>это бесконечный цикл</p></div><div class=""><p>в коде синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 53</h3>
+            <div class="question-text"><p>Какая конструкция в <span lang="EN-US">C</span>++ позволяет вернуть значение из функции через параметр?</p></div>
+            <div class="answers">
+        <div class=""><p><span lang="EN-US">void f(float a );</span></p></div><div class="correct"><p><span lang="EN-US">void f(int  &amp; a);</span></p></div><div class="correct"><p><span lang="EN-US">void f(int * a);</span></p></div><div class=""><p><span lang="EN-US">void f(int a);</span></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 54</h3>
+            <div class="question-text"><p>Укажите правильное определение функции main</p></div>
+            <div class="answers">
+        <div class=""><p>int* main(  )</p></div><div class="correct"><p>int main(int n, char **a)</p></div><div class="correct"><p>int  main( )</p></div><div class=""><p>int  main(int i)</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 55</h3>
+            <div class="question-text"><p>Какие переменные доступны в функции <span lang="EN-US">main</span>?</p>
+<p><code><span lang="EN-US">int a;</span></code></p>
+<p><code><span lang="EN-US">int f(int b) {</span></code></p>
+<p><code><span lang="EN-US">int c;</span></code></p>
+<p><code><span lang="EN-US">}</span></code></p>
+<p><code><span lang="EN-US">int</span></code><code><span lang="EN-US">main(int</span></code><code><span lang="EN-US">argc, char** argv)</span></code></p>
+<p><code><span lang="EN-US">{</span></code></p>
+<p><code><span lang="EN-US">int d;</span></code></p>
+<p><code><span lang="EN-US">}</span></code></p></div>
+            <div class="answers">
+        <div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class="correct"><p>d</p></div><div class="correct"><p>argc</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 56</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Какие переменные доступны в функции </span><span style="font-size: 1rem;" lang="EN-US">f</span><span style="font-size: 1rem;">?</span></p>
+<p><code><span lang="EN-US">int a;</span></code></p>
+<p><code><span lang="EN-US">int f(int b) {</span></code></p>
+<p><code><span lang="EN-US">int c;</span></code></p>
+<p><code><span lang="EN-US">}</span></code></p>
+<p><code><span lang="EN-US">int</span></code><code><span lang="EN-US">main(int</span></code><code><span lang="EN-US">argc, char** argv)</span></code></p>
+<p><code><span lang="EN-US">{</span></code></p>
+<p><code><span lang="EN-US">int d;</span></code></p>
+<p><code><span lang="EN-US">}</span></code></p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>a</p></div><div class="correct"><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div><div class=""><p>argc</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 57</h3>
+            <div class="question-text"><p>Укажите блок кода, в котором переменная y доступна </p>
+<p><code><span lang="EN-US">1     int </span></code><code><span lang="EN-US">main(int</span></code><code><span lang="EN-US">argc, char** argv)</span></code></p>
+<p><code><span lang="EN-US">2     {</span></code></p>
+<p><code><span lang="EN-US">3       </span></code><code><span lang="EN-US">if</span></code><code><span lang="EN-US">( argc &gt; 10 )</span></code></p>
+<p><code><span lang="EN-US">4       </span></code><code><span lang="EN-US">{</span></code></p>
+<p><code><span lang="EN-US">5       </span></code><code><span lang="EN-US">}</span></code></p>
+<p><code><span lang="EN-US">6       </span></code><code><span lang="EN-US">else</span></code><code><span lang="EN-US">if</span></code><code><span lang="EN-US">(int</span></code><code><span lang="EN-US">y = argc - 1 )</span></code></p>
+<p><code><span lang="EN-US">7       </span></code><code><span lang="EN-US">{</span></code></p>
+<p><code><span lang="EN-US">8       </span></code><code><span lang="EN-US">}</span></code></p>
+<p><code><span lang="EN-US">9       </span></code><code><span lang="EN-US">else</span></code></p>
+<p><code><span lang="EN-US">10      </span></code><code><span lang="EN-US">{</span></code></p>
+<p><code><span lang="EN-US">11      </span></code><code><span lang="EN-US">}</span></code></p>
+<p><code><span lang="EN-US">12      </span></code><code><span lang="EN-US">return</span></code><code><span lang="EN-US">0;</span></code></p>
+<p><code><span lang="EN-US">13      </span><span lang="EN-US">}</span></code></p></div>
+            <div class="answers">
+        <div class=""><p>1-13</p></div><div class=""><p>3-11</p></div><div class=""><p>6-8</p></div><div class="correct"><p>6-11</p></div><div class=""><p>6-13</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 58</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Какое значение будут содержать переменные х и </span><span style="font-size: 1rem;" lang="EN-US">y</span><span style="font-size: 1rem;">?</span></p>
+<p><code><span lang="EN-US">int</span></code><code><span lang="EN-US">x;</span></code></p>
+<p><code><span lang="EN-US">int </span></code><code><span lang="EN-US">main()</span></code></p>
+<p><code><span lang="FR">{</span></code></p>
+<p><code><span lang="FR"> </span></code><code><span lang="FR">int</span></code><code><span lang="FR">y;</span></code></p>
+<p><code>}</code></p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p><span lang="EN-US">x – 0, y - неопределённое</span></p></div><div class=""><p><span lang="EN-US">x – неопределённое, y - неопределённое</span></p></div><div class=""><p><span lang="EN-US">x – неопределённое, y - 0</span></p></div><div class=""><p><span lang="EN-US">x – 0, y - 0</span></p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 59</h3>
+            <div class="question-text"><p>Что  обозначает в языке С символ <strong><strong>&amp;</strong></strong></p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>побитовое И</p></div><div class="correct"><p>передача параметра функции по ссылке</p></div><div class=""><p>обращение по адресу</p></div><div class="correct"><p>вычисление адреса</p></div><div class=""><p>логическое И</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 60</h3>
+            <div class="question-text"><p>Что  обозначает в языке С символ <strong>/</strong></p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>целочисленное деление</p></div><div class="correct"><p>вещественное деление</p></div><div class=""><p>побитовое ИЛИ</p></div><div class=""><p>остаток от деления</p></div><div class=""><p>логическое ИЛИ</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 61</h3>
+            <div class="question-text"><p>Чему будет равно <span lang="EN-US">i</span> после выполнения этого кода: <span lang="EN-US">int</span><span lang="EN-US">i</span>=((5 &lt;&lt; 3)&lt;30);</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class="correct"><p>1</p></div><div class=""><p>5230</p></div><div class=""><p>нет верного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 62</h3>
+            <div class="question-text"><p>Чему равен результат выполнения следующего выражения: 1000 / 100 % 7 * 2 ?</p></div>
+            <div class="answers">
+        <div class=""><p>14</p></div><div class="correct"><p>6</p></div><div class=""><p>10</p></div><div class=""><p>нет верного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 63</h3>
+            <div class="question-text"><p>Результат выполнения следующего фрагмента кода: 5 &lt;&lt; 3?</p></div>
+            <div class="answers">
+        <div class="correct"><p>40</p></div><div class=""><p>0</p></div><div class=""><p>53</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 64</h3>
+            <div class="question-text"><p>Результат выполнения следующего фрагмента кода: !((1 || 0) &amp;&amp; 0)</p></div>
+            <div class="answers">
+        <div class="correct"><p>1</p></div><div class=""><p>0</p></div><div class=""><p>синтаксическая ошибка</p></div><div class=""><p>результат не определен</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 65</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Результат выполнения следующего фрагмента кода:  6 /5 * 5;</span></p></div>
+            <div class="answers">
+        <div class="correct"><p>5</p></div><div class=""><p>6</p></div><div class=""><p>0.24</p></div><div class=""><p>другое</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 66</h3>
+            <div class="question-text"><p> Укажите операцию, приоритет выполнения которой ниже остальных.</p></div>
+            <div class="answers">
+        <div class="correct"><p>,</p></div><div class=""><p>!=</p></div><div class=""><p>==</p></div><div class=""><p>&lt;=</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 67</h3>
+            <div class="question-text"><p>Логическая операция с наибольшим приоритетом выполнения.</p></div>
+            <div class="answers">
+        <div class="correct"><p>!</p></div><div class=""><p>||</p></div><div class=""><p>&amp;&amp;</p></div><div class=""><p>==</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 68</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Какой из следующих логических операторов - логический оператор И?</span></p></div>
+            <div class="answers">
+        <div class=""><p>!</p></div><div class=""><p>||</p></div><div class="correct"><p>&amp;&amp;</p></div><div class=""><p>&amp;</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 69</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">В каком случае можно не использовать фигурные скобочки в операторе выбора if?</span></p></div>
+            <div class="answers">
+        <div class=""><p>если в теле оператора <span lang="EN-US">if</span> два и более операторов</p></div><div class=""><p>если в теле оператора <span lang="EN-US">if</span> нет ни одного оператора</p></div><div class="correct"><p>если в теле оператора <span lang="EN-US">if</span> всего один оператор</p></div><div class=""><p><span lang="EN-US">нет правильного</span> ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 70</h3>
+            <div class="question-text"><p><span style="font-size: 1rem;">Что появится на экране, после выполнения этого фрагмента кода?</span></p>
+<p> <img src="images/106.png" alt="" width="476" height="137" /></p>
+<p><code><span lang="EN-US">i</span></code></p></div>
+            <div class="answers">
+        <div class=""><p><span lang="EN-US">a</span><span lang="EN-US">= b</span></p></div><div class=""><p> </p>
+<p><span lang="EN-US">синтаксическая ошибка</span></p>
+<p> </p></div><div class="correct"><p>1=2</p></div><div class=""><p>вывод на экран не выполнится</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 71</h3>
+            <div class="question-text"><p>Укажите операцию, приоритет выполнения которой больше остальных</p></div>
+            <div class="answers">
+        <div class="correct"><p>()</p></div><div class=""><p>++</p></div><div class=""><p>+</p></div><div class=""><p>*</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 72</h3>
+            <div class="question-text"><p>укажите правильный оператор ввода переменных <span lang="EN-US">int </span><span lang="EN-US">a</span>, <span lang="EN-US">b</span>;</p></div>
+            <div class="answers">
+        <div class=""><p><span lang="EN-US">scanf(“%d %d”,a,b);</span></p></div><div class="correct"><p><span lang="EN-US">scanf(“%d %d”,&amp;a,&amp;b);</span></p></div><div class=""><p><span lang="EN-US">scanf(“%d \n”,&amp;a,&amp;b);</span></p></div><div class=""><p><span lang="EN-US">scanf(“%d  %f”,&amp;a,&amp;b);</span></p></div><div class="correct"><p><span lang="EN-US">scanf(“%d  %d”,&amp;a, &amp;b);</span></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 73</h3>
+            <div class="question-text"><p><span lang="EN-US">Что делает данный код в двусвязном списке</span></p>
+<p><span lang="EN-US">p</span>-&gt;<span lang="EN-US">next</span>-&gt;<span lang="EN-US">prev</span>=<span lang="EN-US">p</span>-&gt;<span lang="EN-US">prev</span>;</p>
+<p><span lang="EN-US">p-&gt;prev-&gt;next=p-&gt;next;</span></p></div>
+            <div class="answers">
+        <div class="correct"><p>удаляет элемент из списка</p></div><div class=""><p>добавляет элемент в список</p></div><div class=""><p>переход к следующему элементу списка</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 74</h3>
+            <div class="question-text"><p> </p>
+<p><span lang="EN-US">Что делает данный код в двусвязном списке</span></p>
+<p> </p>
+<p><em><span lang="EN-US">p-&gt;next=t-&gt;next;</span></em></p>
+<p><em><span lang="EN-US">p-&gt;perv=t;</span></em></p>
+<p><em><span lang="EN-US">t-&gt;next-&gt;prev=p;</span></em></p>
+<p><em><span lang="EN-US">t-&gt;next=p;</span></em></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>удаляет элемент из списка</p></div><div class="correct"><p>добавляет элемент в список</p></div><div class=""><p>переход к следующему элементу списка</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 75</h3>
+            <div class="question-text"><p> </p>
+<p><span lang="EN-US">Что делает данный код в двусвязном списке</span></p>
+<p> </p>
+<p> </p>
+<p><em><span lang="EN-US">for(;p-&gt;prev; p=p-&gt;prev);</span></em></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class="correct"><p>переход к голове списка</p></div><div class=""><p>добавляет элемент в список</p></div><div class=""><p>переход к следующему элементу списка</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 76</h3>
+            <div class="question-text"><p><span lang="EN-US">Что делает данный код в односвязном списке</span></p>
+<p><em>p=pp-&gt;next;</em></p>
+<p><em>pp-&gt;next=p-&gt;next;</em></p></div>
+            <div class="answers">
+        <div class="correct"><p>удаляет элемент из списка</p></div><div class=""><p>добавляет элемент в список</p></div><div class=""><p>переход к следующему элементу списка</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 77</h3>
+            <div class="question-text"><p> </p>
+<p><span lang="EN-US">Что делает данный код в односвязном списке</span></p>
+<p><em style="font-size: 1rem;">p-&gt;next=pp-&gt;next;</em></p>
+<p><em>pp-&gt;next=p;</em></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>удаляет элемент из списка</p></div><div class="correct"><p>добавляет элемент в список</p></div><div class=""><p>переход к следующему элементу списка</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 78</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>for(int i=0; !feof(f); i++) </p>
+<p>fread(buf+i,sizeof(char),1,f);</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>1</p></div><div class=""><p>10</p></div><div class="correct"><p>11</p></div><div class=""><p>нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 79</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>for(int i=0; !feof(f); i+=2) fread(buf+i*2,sizeof(char),2,f);</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>1</p></div><div class=""><p>10</p></div><div class=""><p>11</p></div><div class=""><p>5</p></div><div class="correct"><p>6</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 80</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>int i=0;</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>while(fread(buf+i*2,sizeof(char),2,f)) i+=2;</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>1</p></div><div class=""><p>10</p></div><div class=""><p>нет правильного ответа</p></div><div class="correct"><p>5</p></div><div class=""><p>6</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 81</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 11 байтам?</p>
+<p>int i=0;</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>while(fread(buf+i*2,sizeof(char),2,f)) i+=2;</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>1</p></div><div class=""><p>10</p></div><div class=""><p>нет правильного ответа</p></div><div class=""><p>5</p></div><div class="correct"><p>6</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 82</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 12 байтам?</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>for(int i=0; !feof(f); i++) </p>
+<p>fread(buf+i,sizeof(float),1,f);</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>5</p></div><div class=""><p>10</p></div><div class=""><p>11</p></div><div class="correct"><p>4</p></div><div class=""><p>0</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 83</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>for(int i=0; feof(f); i++) </p>
+<p>fread(buf+i,sizeof(char),1,f);</p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>5</p></div><div class=""><p>10</p></div><div class=""><p>11</p></div><div class="correct"><p>0</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 84</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>f=fopen("a.dat","wb+");</p>
+<p>for(int i=0; !feof(f); i++) </p>
+<p>fread(buf+i,sizeof(char),1,f);</p></div>
+            <div class="answers">
+        <div class="correct"><p>1</p></div><div class=""><p>5</p></div><div class=""><p>10</p></div><div class=""><p>11</p></div><div class=""><p>0</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 85</h3>
+            <div class="question-text"><p>Сколько раз выполнится данный цикл, если размер файла равен 10 байтам?</p>
+<p>f=fopen("a.dat","rb");</p>
+<p>for(int i=0; !feof(f); i+=2) fread(buf+i*2, sizeof(char)*2, 1, f);</p></div>
+            <div class="answers">
+        <div class=""><p>0</p></div><div class=""><p>1</p></div><div class=""><p>10</p></div><div class=""><p>11</p></div><div class=""><p>5</p></div><div class="correct"><p>6</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 86</h3>
+            <div class="question-text"><p>Глобальные переменные располагаются в</p></div>
+            <div class="answers">
+        <div class="correct"><p>Статической памяти</p></div><div class=""><p>Динамической памяти</p></div><div class=""><p>Стеке</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 87</h3>
+            <div class="question-text"><p>Функция malloc выделяет память в</p></div>
+            <div class="answers">
+        <div class=""><p>Статической памяти</p></div><div class="correct"><p>Динамической памяти</p></div><div class=""><p>Стеке</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 88</h3>
+            <div class="question-text"><p>Оператор new выделяет память в</p></div>
+            <div class="answers">
+        <div class=""><p>Статической памяти</p></div><div class="correct"><p>Динамической памяти</p></div><div class=""><p>Стеке</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 89</h3>
+            <div class="question-text"><p>Локальные переменные располагаются в</p></div>
+            <div class="answers">
+        <div class=""><p>Статической памяти</p></div><div class=""><p>Динамической памяти</p></div><div class="correct"><p>Стеке</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 90</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="images/141.png" alt="" width="152" height="194" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class=""><p>3</p></div><div class="correct"><p>4</p></div><div class=""><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 91</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="images/142.png" alt="" width="171" height="204" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class="correct"><p>2</p></div><div class="correct"><p>3</p></div><div class="correct"><p>4</p></div><div class=""><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 92</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="images/143.png" alt="" width="202" height="199" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class="correct"><p>3</p></div><div class="correct"><p>4</p></div><div class=""><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 93</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="images/144.png" alt="" width="164" height="197" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class=""><p>3</p></div><div class=""><p>4</p></div><div class="correct"><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 94</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="data:image/png;base64,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" alt="" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class=""><p>2</p></div><div class=""><p>3</p></div><div class="correct"><p>4</p></div><div class=""><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 95</h3>
+            <div class="question-text"><p>В какой строке есть ошибка в приведенном фрагменте программы на С++</p>
+<p><img src="images/146.png" alt="" width="195" height="196" /></p>
+<p><span style="color: #ff00ff;"> </span></p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p>1</p></div><div class="correct"><p>2</p></div><div class=""><p>3</p></div><div class=""><p>4</p></div><div class=""><p>нет ошибок</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 96</h3>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"> Дан двумерный массив int m[4][3]</p>
+<p dir="ltr">какой элемент обнулиться в итоге операции m[0][7]=0</p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p style="text-align: left;" dir="ltr">m[0][2]</p></div><div class=""><p style="text-align: left;" dir="ltr">m[1][2]</p></div><div class="correct"><p style="text-align: left;" dir="ltr">m[2][1]</p></div><div class=""><p dir="ltr">обнулиться элемент за пределами массива</p>
+<p> </p></div><div class=""><p style="text-align: left;" dir="ltr">m[3][2]</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 97</h3>
+            <div class="question-text"><p style="text-align: left;" dir="ltr">Дан двумерный массив int m[3][4]</p>
+<p dir="ltr">какой элемент обнулиться в итоге операции m[0][7]=0</p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p style="text-align: left;" dir="ltr">m[0][3]</p></div><div class="correct"><p style="text-align: left;" dir="ltr">m[1][3]</p></div><div class=""><p style="text-align: left;" dir="ltr">m[2][1]</p></div><div class=""><p dir="ltr">обнулиться элемент за пределами массива</p>
+<p> </p></div><div class=""><p style="text-align: left;" dir="ltr">m[2][3]</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 98</h3>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"> Дан двумерный массив int m[3][4]</p>
+<p dir="ltr">какой элемент обнулиться в итоге операции m[2][-1]=0</p>
+<p> </p>
+<p> </p></div>
+            <div class="answers">
+        <div class=""><p style="text-align: left;" dir="ltr">m[0][3]</p></div><div class="correct"><p style="text-align: left;" dir="ltr">m[1][3]</p></div><div class=""><p style="text-align: left;" dir="ltr">m[2][1]</p></div><div class=""><p dir="ltr">обнулиться элемент за пределами массива</p>
+<p> </p></div><div class=""><p style="text-align: left;" dir="ltr">синтаксическая ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 99</h3>
+            <div class="question-text"><p>В языке С константа <span lang="EN-US">a</span>=0101 представлена в:</p></div>
+            <div class="answers">
+        <div class=""><p>2-ой системе</p></div><div class="correct"><p>8-ой системе</p></div><div class=""><p>10-ой системе</p></div><div class=""><p>16-ой системе</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 100</h3>
+            <div class="question-text"><p>В языке С константа <span lang="EN-US">a</span>=0x101 представлена в:</p></div>
+            <div class="answers">
+        <div class=""><p>2-ой системе</p></div><div class=""><p>8-ой системе</p></div><div class=""><p>10-ой системе</p></div><div class="correct"><p>16-ой системе</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 101</h3>
+            <div class="question-text"><p>В языке С константа <span lang="EN-US">a</span>=1010 представлена в:</p></div>
+            <div class="answers">
+        <div class=""><p>2-ой системе</p></div><div class=""><p>8-ой системе</p></div><div class="correct"><p>10-ой системе</p></div><div class=""><p>16-ой системе</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 102</h3>
+            <div class="question-text"><p>Какую функцию должны содержать все программы на С?</p></div>
+            <div class="answers">
+        <div class="correct"><p>int main()</p></div><div class=""><p>void system()</p></div><div class=""><p>void printf()</p></div><div class=""><p>void iostream</p></div><div class=""><p>void stdio.h</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 103</h3>
+            <div class="question-text"><p>Какие служебные символы используются для обозначения начала и конца блока кода?</p></div>
+            <div class="answers">
+        <div class=""><p>(   )</p></div><div class=""><p>&lt;   &gt;</p></div><div class="correct"><p>{    }</p></div><div class=""><p>[]</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 104</h3>
+            <div class="question-text"><p>Какой из следующих операторов - оператор сравнения двух переменных на неравенство?</p></div>
+            <div class="answers">
+        <div class=""><p> =</p></div><div class=""><p> ==</p></div><div class="correct"><p>!=</p></div><div class=""><p>equal</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 105</h3>
+            <div class="question-text"><p>Преобразование целочисленной переменной value в ASCII эквивалент</p></div>
+            <div class="answers">
+        <div class="correct"><p><span lang="EN-US">(char) value</span></p></div><div class=""><p><span lang="EN-US">atoi(value)</span></p></div><div class=""><p><span lang="EN-US">int  (value)</span></p></div><div class=""><p><span lang="EN-US">cout &lt;&lt; value</span></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 106</h3>
+            <div class="question-text"><p>Значение 5.9875e17 может быть сохранено в переменной, типа:</p></div>
+            <div class="answers">
+        <div class="correct"><p><span style="font-size: 1rem;">float</span></p>
+<p> </p></div><div class=""><p><span style="font-size: 1rem;">long</span></p>
+<p> </p></div><div class="correct"><p><span style="font-size: 1rem;">double</span></p>
+<p> </p></div><div class=""><p><span lang="EN-US">char</span></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 107</h3>
+            <div class="question-text"><p>В языке С++ Array и Vector аналоги массивов языка С</p></div>
+            <div class="answers">
+        <div class="correct"><p>Array - статического,  Vector - динамического</p></div><div class=""><p>Array - динамического,  Vector - статического</p></div><div class=""><p>Array - динамического,  Vector - динамического</p></div><div class=""><p>Array - статического,  Vector - статического</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 108</h3>
+            <div class="question-text"><p>В каком из нижеперечисленных диапазонных циклов языка С++ можно изменить элементы массива x через переменную y</p></div>
+            <div class="answers">
+        <div class=""><p><em>       for( int y : x ) </em></p></div><div class=""><p><em>    for( auto y : x ) </em></p></div><div class="correct"><p><em>    for( auto &amp;y : x ) </em></p></div><div class="correct"><p><em>    for( int &amp;y : x ) </em></p></div><div class=""><p><em>  for( const auto &amp;y : x )</em></p></div><div class=""><p><em>  for( const int &amp;y : x )</em></p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 109</h3>
+            <div class="question-text"><p>Что выведет на экран вызов функции <em>f(5)</em> на языке С++ </p>
+<p><img src="images/153.png" alt="" width="469" height="42" /></p>
+<p><span style="color: #ff00ff;"><em> </em></span></p>
+<p><em> </em></p></div>
+            <div class="answers">
+        <div class="correct"><p>5 2</p></div><div class=""><p>1 2</p></div><div class=""><p>5 1</p></div><div class=""><p>в коде ошибка</p></div><div class=""><p>5 5</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 110</h3>
+            <div class="question-text"><p>Перегрузка функций. Что выведет на экран вызов функции f(1.,2.) на языке С++ </p>
+<p><img src="images/156.png" alt="" width="475" height="109" /></p>
+<p><span style="color: #ff00ff;"> </span></p></div>
+            <div class="answers">
+        <div class="correct"><p>2</p></div><div class=""><p>1</p></div><div class=""><p>3</p></div><div class=""><p>в коде ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 111</h3>
+            <div class="question-text"><p>Какой тип будет у переменной<strong> a</strong> в функции sort если она вызывается для сортировки массива типа double</p>
+<p>template &lt;typename T&gt;<br />void sort(T * m, int n) {<br /> T a;<br /> for (int i = 0; i &lt; n-1; i++)<br /> for(int j=0; j&lt; n-1; j++)<br /> if(m[j]&gt;m[j+1]) a=m[j], m[j]=m[j+1], m[j+1]=a;<br />}</p></div>
+            <div class="answers">
+        <div class="correct"><p>double</p></div><div class=""><p>int</p></div><div class=""><p>float</p></div><div class=""><p>в коде ошибка</p></div></div></div>
+        <div class="question">
+            <h3>Вопрос 112</h3>
+            <div class="question-text"><p>Какой из вариантов описывает указатель на функцию</p></div>
+            <div class="answers">
+        <div class="correct"><p><em>  int (*x)(int a)</em></p></div><div class=""><p><em>  int (x)(int a)</em></p></div><div class=""><p><em>  int *x(int a)</em></p></div><div class=""><p><em>  int (*x)</em></p></div><div class="correct"><p><em>  int (*x)(int)</em></p></div></div></div>
+    </body>
+    </html>
+    
