@@ -1,0 +1,460 @@
+
+    <html>
+    <head>
+        <title>Questions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+            .question-type { color: #666; font-size: 0.9em; margin-bottom: 5px; }
+            .answers { margin-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #999; }
+            .correct { color: green; font-weight: bold; }
+            .calculated-info, .numerical-info, .shortanswer-info, .gapselect-info, .ddwtos-info { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+            .gap-group { margin: 10px 0; padding: 10px; background: #fff; border-left: 3px solid #ccc; }
+            .gap-option { padding: 5px; margin: 3px 0; }
+            .gap-option.correct { color: green; font-weight: bold; background: #e8f5e9; }
+            .dragbox { display: inline-block; padding: 5px 10px; margin: 3px; background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
+            .dragbox.correct { background: #c8e6c9; border-color: green; color: green; font-weight: bold; }
+            .correct-sequence { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 3px solid green; }
+            img { max-width: 100%; height: auto; }
+        </style>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+    
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> ddwtos | <strong>Название:</strong> staging area</div>
+            <div class="question-text"><p>Как добавить файлы в staging area?</p>
+<p>Перетащите карточки, которые составят правильную команду:<br />[[1]][[2]]</p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div class="ddwtos-info"><p><strong>Позиции:</strong></p><p><strong>Доступные варианты для перетаскивания:</strong></p><div style="padding: 10px;"><span class="dragbox">git</span><span class="dragbox">add .</span><span class="dragbox">commit -m "hahaha"</span><span class="dragbox">merge</span><span class="dragbox">privet</span></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> description | <strong>Название:</strong> 1</div>
+            <div class="question-text"><p class="ds-markdown-paragraph">Представь, что ты пишешь книгу. Основная рукопись (чистовик) лежит на столе. Если ты захочешь поэкспериментировать с новой сюжетной линией или переписать главу, ты не будешь вырывать страницы из оригинала. Ты возьмешь стопку чистой бумаги (сделаешь копию) и будешь править её. Если эксперимент удался — ты перенесешь правки в оригинал. Если нет — просто выбросишь черновик.</p>
+<p class="ds-markdown-paragraph"><strong>Ветка (branch) в Git</strong> — это и есть такой «черновик» или «параллельная вселенная». Это независимая линия разработки, которая позволяет изолировать свою работу, будь то новая функция, исправление бага или эксперимент, не мешая другим и не ломая стабильную версию проекта.</p>
+<p class="ds-markdown-paragraph"><img src="images-trpo-3893-top/gitbranch.png" alt="" width="600" height="257" /></p></div>
+        <div style="color: #999;"><em>Тип вопроса "description" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> description | <strong>Название:</strong> 2</div>
+            <div class="question-text"><p class="ds-markdown-paragraph">Когда ты создаешь репозиторий, Git автоматически создает для тебя первую ветку. Раньше она называлась <code>master</code>, сейчас чаще используется имя <code>main</code>. (Но у нас пока это все-таки master) Это основная ветка проекта. Обычно здесь хранится самая стабильная, рабочая версия кода.</p>
+<p class="ds-markdown-paragraph">Указатель <code>HEAD</code> — это особый указатель, который показывает, где именно (в какой ветке и на каком коммите) мы сейчас находимся.</p></div>
+        <div style="color: #999;"><em>Тип вопроса "description" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 0</div>
+            <div class="question-text"><p>Введите ФИО и номер группы каждого, кто в ваше команде</p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 5</div>
+            <div class="question-text"><p dir="ltr"><span>Чем Agile отличается от Waterfall?</span></p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1</div>
+            <div class="question-text"><p><span id="docs-internal-guid-6076b736-7fff-02bc-66a5-eb215ca195ac"><span>Что такое жизненный цикл ПО?</span></span></p></div>
+        <div class="answers"><div class=""><p>а</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1</div>
+            <div class="question-text"><p>1 вопрос</p></div>
+        <div class="answers"><div class="correct"><p><span>Спринт</span></p></div><div class=""><p><span>Эпик</span></p></div><div class=""><p><span>Ежедневная встреча</span></p></div><div class=""><p><span>Бэклог продукта</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1</div>
+            <div class="question-text"><p><span>Какая команда добавляет измененные файлы в staging area Git?</span></p></div>
+        <div class="answers"><div class=""><p>git commit</p>
+<ul style="padding: 0px 0px 5px 2em; margin-bottom: 0px; overflow: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
+<li style="padding: 0px;"><code style="font-family: monospace; font-size: 13.6px; word-break: break-word; border-radius: 6px; margin: 0px; padding: 0.2em 0.4em; white-space: break-spaces;">git commit</code></li>
+</ul>
+<p> </p></div><div class=""><p>git push</p></div><div class="correct"><p>git add</p></div><div class=""><p>git pull</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1</div>
+            <div class="question-text"><pre><span style="font-family: arial, helvetica, sans-serif;">Что делает команда <code>git rebase</code>?</span></pre></div>
+        <div class="answers"><div class=""><p><span>Объединяет две ветки, создавая коммит слияния.</span></p></div><div class="correct"><p><span>Переносит коммиты из одной ветки на другую, создавая новую историю коммитов.</span></p></div><div class=""><p><span>Удаляет ветку. </span></p></div><div class=""><p><span>Переименовывает ветку.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-1</div>
+            <div class="question-text"><p dir="ltr"><span>Что такое жизненный цикл ПО?</span></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-69edd9e4-7fff-4033-056a-a5e11c9eec70"><span>Процесс создания игры</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-3dfe4b9c-7fff-5979-50a1-df8c03fe9eab"><span>Все этапы разработки ПО от идеи до вывода из эксплуатации</span></span></p></div><div class=""><p><span id="docs-internal-guid-82bc214f-7fff-808f-9b52-73a3fd113db8"><span>Написание кода</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-10</div>
+            <div class="question-text"><p dir="ltr"><span>Какие директивы препроцессора обычно используются вместе для создания “header guards” (защиты от множественного включения) в C/C++?</span></p></div>
+        <div class="answers"><div class=""><p dir="ltr"><span>#include, #define, #endif</span></p></div><div class=""><p dir="ltr"><span>#ifdef, #else, #endif</span></p></div><div class="correct"><p dir="ltr"><span>#ifndef, #define, #endif</span></p></div><div class=""><p dir="ltr"><span>#pragma once, #include</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-11</div>
+            <div class="question-text"><p dir="ltr"><span>Что произойдет, если вы попытаетесь сделать </span><span>git push </span><span>в ветку, в которой вы не являетесь единственным разработчиком, и ваш локальный репозиторий отстает от удаленного?</span></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-d9029085-7fff-8eac-4b88-5fe96eb2b9dd"><span>Push будет выполнен успешно, просто ваши изменения будут поверх старых</span></span></p></div><div class=""><p><span id="docs-internal-guid-f61ae3d7-7fff-a3d3-4410-069241544e48"><span>Git автоматически объединит (merge) удаленные изменения с вашими локальными и выполнит push</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-8777fbff-7fff-c272-2087-aec24cef47b9"><span>Git отклонит ваш push и предложит сначала выполнить `git pull`, чтобы обновить ваш локальный репозиторий</span></span></p></div><div class=""><p><span id="docs-internal-guid-e019fec4-7fff-f342-76d2-84fcd8b356cd"><span>Push будет выполнен, но создаст конфликт, который нужно будет разрешить вручную</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-2</div>
+            <div class="question-text"><p><span id="docs-internal-guid-de89c326-7fff-aaaf-db4d-87fd418452e2"><span>Какой этап жизненного цикла следует после «Проектирования»?</span></span></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-28e69520-7fff-d93e-62a1-78b5741ff596"><span>Тестирование</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-288b6b5b-7fff-ea03-be29-f932a79dc67c"><span>Разработка</span></span></p></div><div class=""><p><span id="docs-internal-guid-4038aecb-7fff-f7be-ba83-343776f48237"><span>Сопровождение</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-3</div>
+            <div class="question-text"><p dir="ltr"><span>Какая методология предполагает строго последовательные этапы?</span></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-e3562fc9-7fff-53f4-3937-f3bdea10ef04"><span>Agile</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-9bd560d1-7fff-825e-86f0-2ffedcb727fa"><span>Waterfall</span></span></p></div><div class=""><p><span id="docs-internal-guid-7ebdb044-7fff-9093-904f-4f1bef321cf0"><span>Scrum</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-5</div>
+            <div class="question-text"><p dir="ltr"><span>Вы нашли файл </span><span>secret_passwords.txt</span><span>, но он не должен попасть в репозиторий. Как его спрятать?</span></p></div>
+        <div class="answers"><div class=""><p dir="ltr"><span>Добавить коментарий «Это не то, что вы ищете!»</span></p></div><div class=""><p><span id="docs-internal-guid-b025edfd-7fff-38ce-51b1-e1bdaa83a872"><span>Зашифровать и назвать </span><span>innocent_cat_video.mp4</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-e1aadbbe-7fff-5516-4105-70dc3a13afca"><span>Добавить его в </span><span>.gitignore</span><span> и сделать </span><span>git rm --cached</span></span></p></div><div class=""><p><span id="docs-internal-guid-c56fe4ab-7fff-8dc3-4c1a-312815e18feb"><span>Отправить его в ветку </span><span>forget-this</span><span>, а потом удалить</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-6</div>
+            <div class="question-text"><p><span id="docs-internal-guid-61837b0f-7fff-ef8d-4e58-006d2c01b62b"><span>Что такое Git Hooks и для чего они используются?</span></span></p></div>
+        <div class="answers"><div class=""><p dir="ltr"><span>Это специальные команды Git, которые позволяют скрывать файлы от других разработчиков.</span></p></div><div class="correct"><p dir="ltr"><span>Это скрипты, которые автоматически запускаются Git'ом перед или после определенных событий (например, коммита, push). </span></p></div><div class=""><p dir="ltr"><span>Это команда для переименования веток.</span></p></div><div class=""><p dir="ltr"><span>Это команда для создания резервных копий репозитория.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-7</div>
+            <div class="question-text"><p><span id="docs-internal-guid-39ec2c57-7fff-9a40-e257-af38f78e35c2"><span>Какие типы ошибок лучше всего обнаруживаются динамическими анализаторами кода?</span></span></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-b1d02cb5-7fff-cd1a-1d45-c10c8b8ff169"><span>Синтаксические ошибки</span></span></p></div><div class=""><p><span id="docs-internal-guid-08946f41-7fff-e1d0-720e-214ef3559c88"><span>Ошибки времени выполнения, такие как утечки памяти, ошибки доступа к памяти, переполнения буфера, оформления</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-42af39ba-7fff-f8d3-6e36-affaa52e6242"><span>Ошибки времени выполнения, такие как утечки памяти, ошибки доступа к памяти, переполнения буфера, гонки данных</span></span></p></div><div class=""><p><span id="docs-internal-guid-4c23f17b-7fff-09e9-e328-f7283d1202ea"><span>Ошибки, связанные с неиспользованием функций</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-8</div>
+            <div class="question-text"><p>Выберите верное утверждение</p></div>
+        <div class="answers"><div class="correct"><p dir="ltr"><span>Динамический анализ может обнаружить ошибки, связанные с сложным взаимодействием компонентов системы.</span></p></div><div class=""><p><span id="docs-internal-guid-690991f6-7fff-9fee-c9bd-1f32e150de0b"><span>Динамический анализ не требует наличия исходного кода.</span></span></p></div><div class=""><p dir="ltr"><span>Динамический анализ не выдает ложных срабатываний.</span></p></div><div class=""><p dir="ltr"><span> </span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 1-9</div>
+            <div class="question-text"><p><span id="docs-internal-guid-af10cd22-7fff-519a-e31b-607192faec5d"><span>Опишите стратегию юнит-тестирования “черного ящика” (black-box testing)</span></span></p></div>
+        <div class="answers"><div class="correct"><p><span id="docs-internal-guid-ec4f811d-7fff-8f10-f0cc-4aec470ab397"><span>Тестирование кода без знания его внутренней структуры</span></span></p></div><div class=""><p><span id="docs-internal-guid-b97d5ab1-7fff-a556-29c2-8265aa72e19c"><span>Тестирование кода с доступом ко всем внутренним переменным и функциям</span></span></p></div><div class=""><p><span id="docs-internal-guid-d9cdeac9-7fff-b8b1-100e-e681c63b2e74"><span>Тестирование производительности кода</span></span></p></div><div class=""><p><span id="docs-internal-guid-97bc8b85-7fff-caa3-c2c0-44ff285e4d8c"><span>Тестирование интеграции кода с другими модулями</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 10</div>
+            <div class="question-text"><p><span id="docs-internal-guid-9d3dcc16-7fff-b0e8-44a4-53da8deba36c"><span>Что произойдет, если вы попытаетесь сделать </span><span>git push </span><span>в ветку, в которой вы не являетесь единственным разработчиком, и ваш локальный репозиторий отстает от удаленного?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 10</div>
+            <div class="question-text"><p><span>Как Git обеспечивает доступ к файлам в разных коммитах, если при каждом коммите создается снимок состояния всего репозитория?</span></p></div>
+        <div class="answers"><div class="correct"><p><span>Git хранит полные копии файлов, но использует content-addressable storage, чтобы избежать дублирования одинаковых файлов между коммитами</span></p></div><div class=""><p><span>Git хранит только изменения (diffs) между коммитами</span></p></div><div class=""><p><span> Git хранит полные копии файлов только для ключевых коммитов, а для остальных – изменения.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 10</div>
+            <div class="question-text"><pre><span style="font-family: arial, helvetica, sans-serif;">Вы работаете над веткой <strong><code>feature/complex</code></strong> и внесли несколько коммитов. Вы выполнили <strong><code>git pull --rebase origin/feature/complex</code></strong>, и <strong>rebase</strong> прошел успешно.</span></pre>
+<pre><span style="font-family: arial, helvetica, sans-serif;">После этого, другой разработчик (назовем его Разработчик Б), также работающий над <strong><code>feature/complex</code></strong>, выполнил <strong><code>git pull --rebase origin/feature/complex</code></strong>, разрешил конфликты (если были) и успешно выполнил <strong><code>git push origin feature/complex</code></strong>. Таким образом, удалённая ветка <strong><code>origin/feature/complex</code></strong> теперь содержит его коммиты, которых нет в вашей локальной ветке.</span></pre>
+<pre><span style="font-family: arial, helvetica, sans-serif;">Теперь вы хотите отправить свои изменения на удаленный репозиторий, но <em>при этом сохранить все коммиты, которые Разработчик Б добавил в удаленную ветку</em>. Какую последовательность действий вам следует предпринять?</span></pre>
+<pre><span style="font-family: arial, helvetica, sans-serif;"> </span></pre></div>
+        <div class="answers"><div class=""><pre><span style="font-family: arial, helvetica, sans-serif;"><code><span>Выполнить </span><code>git push --force origin feature/complex</code><span>, чтобы перезаписать удаленную ветку своими локальными изменениями (это удалит коммиты Разработчика Б).</span></code></span></pre></div><div class=""><pre><span style="font-family: arial, helvetica, sans-serif;"><code><span>Поскольку вы уже выполнили </span><code>git pull --rebase</code><span>, просто повторите </span><code>git pull --rebase origin feature/complex</code><span>, а затем </span><code>git push origin feature/complex</code><span>.</span></code></span></pre></div><div class="correct"><pre><span style="font-family: arial, helvetica, sans-serif;">Выполнить <code>git pull origin feature/complex</code>, разрешить возникшие конфликты слияния (если есть), выполнить <code>git commit</code>, а затем <code>git push origin feature/complex</code>.</span></pre></div><div class=""><pre><span style="font-family: arial, helvetica, sans-serif;">Откатиться к коммиту, предшествующему вашему <code>git pull --rebase</code>, и начать работу заново.</span></pre></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 11</div>
+            <div class="question-text"><p dir="ltr"><span>Что такое Git Hooks и для чего они используются? </span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 11</div>
+            <div class="question-text"><p>Вопрос, ответ на который нужно самому (самой) поискать<br /><br /><span>Какова была основная причина, побудившая Линуса Торвальдса к созданию Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Он хотел создать более простую в использовании систему контроля версий</span></p></div><div class="correct"><p><span>Он был недоволен существующими проприетарными системами контроля версий, которые использовались для разработки ядра Linux, особенно после того, как BitKeeper стал недоступен бесплатно</span></p></div><div class=""><p><span>Он хотел создать систему контроля версий, работающую быстрее, чем Subversion</span></p></div><div class=""><p><span>Он хотел создать систему контроля версий, которая бы лучше поддерживала распределенную разработку</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 12</div>
+            <div class="question-text"><p dir="ltr"><span>Как получить изменения из удаленного репозитория и объединить их с локальными?</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 13</div>
+            <div class="question-text"><p><span id="docs-internal-guid-5bac8d52-7fff-cd31-a9ec-3f64be486d46"><span>Как удалить ветку "experiment"?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 14</div>
+            <div class="question-text"><p dir="ltr"><span>Что делает git reset --hard HEAD~1?</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 17</div>
+            <div class="question-text"><p dir="ltr"><span>Какое из следующих утверждений лучше всего описывает цель статического анализа кода?</span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 18</div>
+            <div class="question-text"><p><span id="docs-internal-guid-e791b348-7fff-5f62-1a8d-14dc8867c76b"><span>Какие типы ошибок лучше всего обнаруживаются динамическими анализаторами кода?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 19</div>
+            <div class="question-text"><p dir="ltr"><span>В чем основное преимущество статического анализа перед динамическим?</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 2</div>
+            <div class="question-text"><p dir="ltr"><span>Какой этап жизненного цикла следует после «Проектирования»?</span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 2</div>
+            <div class="question-text"><p>2 вопрос</p></div>
+        <div class="answers"><div class=""><p><span>Вайп-лимит</span></p></div><div class="correct"><p><span>WIP-лимит</span></p></div><div class=""><p><span>Спринт-лимит</span></p></div><div class=""><p><span>Флоу-лимит</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 2</div>
+            <div class="question-text"><p><span>Какая команда фиксирует изменения, добавленные в индекс (<span>staging area</span>), в репозиторий Git?</span></p></div>
+        <div class="answers"><div class=""><p>git add</p></div><div class="correct"><p>git commit</p></div><div class=""><p>git push</p></div><div class=""><p>git status</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 2</div>
+            <div class="question-text"><p><span>Какой эффект </span><em>гарантированно</em><span> возникает при использовании </span><code>git rebase</code><span> вместо </span><code>git merge</code><span> для интеграции изменений из одной ветки в другую?</span></p></div>
+        <div class="answers"><div class=""><p><span>Всегда будет меньше конфликтов.</span></p></div><div class="correct"><p><span>История коммитов будет содержать меньше информации о том, как именно происходила интеграция изменений.</span></p></div><div class=""><p><span>Новые коммиты будут добавлены только в целевую ветку, а не в исходную.</span></p></div><div class=""><p><span>Ничего не поменяется.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 20</div>
+            <div class="question-text"><pre dir="ltr"><span>int* allocate_memory(int size) {</span></pre>
+<pre dir="ltr"><span>  int *ptr = (int*)malloc(size * sizeof(int));</span></pre>
+<pre dir="ltr"><span>  if (ptr == NULL) {</span></pre>
+<pre dir="ltr"><span>    perror("malloc failed");</span></pre>
+<pre dir="ltr"><span>    return NULL;</span></pre>
+<pre dir="ltr"><span>  }</span></pre>
+<pre dir="ltr"><span>  return ptr;</span></pre>
+<pre dir="ltr"><span>}</span></pre>
+<pre><span><span> </span></span></pre>
+<pre dir="ltr"><span>int main() {</span></pre>
+<pre dir="ltr"><span>  int *arr = allocate_memory(10);</span></pre>
+<pre dir="ltr"><span>  if (arr != NULL) {</span></pre>
+<pre dir="ltr"><span>    arr[10] = 5;</span></pre>
+<pre dir="ltr"><span>    free(arr);</span></pre>
+<pre dir="ltr"><span>  }</span></pre>
+<pre dir="ltr"><span>  return 0;</span></pre>
+<pre dir="ltr"><span>}</span></pre></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 21</div>
+            <div class="question-text"><pre dir="ltr"><span>#include &lt;stdio.h&gt;</span></pre>
+<pre dir="ltr"><span>#include &lt;string.h&gt;</span></pre>
+<pre><span><span> </span></span></pre>
+<pre dir="ltr"><span>int main() {</span></pre>
+<pre dir="ltr"><span>  char str1[10];</span></pre>
+<pre dir="ltr"><span>  char str2[] = "This is a long string";</span></pre>
+<pre dir="ltr"><span>  strcpy(str1, str2);</span></pre>
+<pre dir="ltr"><span>  printf("%s\n", str1);</span></pre>
+<pre dir="ltr"><span>  return 0;</span></pre>
+<pre dir="ltr"><span>}</span></pre></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 22</div>
+            <div class="question-text"><p><span id="docs-internal-guid-413e3502-7fff-a05f-faab-7c703493e8be"><span>Какая модель ветвления изображена на слайде?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 23</div>
+            <div class="question-text"><p><span id="docs-internal-guid-11ee1c76-7fff-031a-1286-b3bd07faaf51"><span>Какая модель ветвления изображена на слайде?</span></span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 24</div>
+            <div class="question-text"><p dir="ltr"><span>Какие директивы препроцессора обычно используются вместе для создания “header guards” (защиты от множественного включения) в C/C++?</span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 25</div>
+            <div class="question-text"><p><span id="docs-internal-guid-0190fc35-7fff-2bb2-bf3e-dfeaf1c8a387"><span>Выберите, какие части в этом Makefile соответствуют цели (ям):</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class="correct"><p>d</p></div><div class=""><p>e</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 26</div>
+            <div class="question-text"><p>Выберите, какие части в этом Makefile соответствуют зависимости (ям):</p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div><div class=""><p>e</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 27</div>
+            <div class="question-text"><p><span id="docs-internal-guid-54394cd9-7fff-7b0d-27f8-74add0cd11bf"><span>Выберите, какие части в этом Makefile соответствуют командам:</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 28</div>
+            <div class="question-text"><p dir="ltr"><span>Опишите стратегию юнит-тестирования “черного ящика” (black-box testing).</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 29</div>
+            <div class="question-text"><p><span id="docs-internal-guid-f17cf531-7fff-46af-4a63-547d581d66d8"><span>Вы нашли критическую уязвимость в банковском приложении. Что следует сделать в первую очередь?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 29</div>
+            <div class="question-text"><p><span id="docs-internal-guid-f17cf531-7fff-46af-4a63-547d581d66d8"><span>Вы нашли критическую уязвимость в банковском приложении. Что следует сделать в первую очередь?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 3</div>
+            <div class="question-text"><p dir="ltr"><span>Какая методология предполагает строго последовательные этапы?</span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 3</div>
+            <div class="question-text"><p><span>Какое из следующих понятий описывает процесс предоставления доступа к программному обеспечению конечным пользователям?</span></p></div>
+        <div class="answers"><div class=""><p><span>Разработка</span></p></div><div class=""><p><span>Тестирование</span></p></div><div class="correct"><p><span>Развертывание</span></p></div><div class=""><p><span>Сопровождение</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 3</div>
+            <div class="question-text"><p><span>Какая команда показывает статус репозитория Git, включая измененные, добавленные и неотслеживаемые файлы?</span></p></div>
+        <div class="answers"><div class=""><p>git log</p></div><div class=""><p>git commit</p></div><div class="correct"><p>git status</p></div><div class=""><p>git add</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 3</div>
+            <div class="question-text"><pre><span style="font-family: arial, helvetica, sans-serif;">В каком из перечисленных сценариев использование <code>git rebase</code> с <em>наибольшей вероятностью</em> приведет к проблемам для других членов команды?</span></pre></div>
+        <div class="answers"><div class=""><p><span>Работа над новой фичей в локальной ветке, еще не опубликованной в удаленный репозиторий.</span></p></div><div class=""><p><span>Исправление опечатки в последнем коммите локальной ветки перед публикацией.</span></p></div><div class=""><p><span>Реорганизация нескольких связанных коммитов в локальной ветке для улучшения читаемости.</span></p></div><div class="correct"><p><span>Изменение истории общей удаленной ветки delevop</span><span>, на которой активно работают несколько разработчиков.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 30</div>
+            <div class="question-text"><p><span id="docs-internal-guid-397d9e4d-7fff-71c1-e0be-5b0bd174f2a4"><span>Команда из 5 человек разрабатывает приложение для управления умным домом. Требования часто меняются из-за обратной связи бета-тестеров, сроки сжатые. Какой подход наиболее эффективен для организации процесса разработки?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 4</div>
+            <div class="question-text"><p dir="ltr"><span>Что такое «спринт» в Scrum?</span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 4</div>
+            <div class="question-text"><p><span>Какая команда отправляет локальные коммиты в удаленный репозиторий?</span></p></div>
+        <div class="answers"><div class=""><p>git pull</p></div><div class=""><p>git fetch</p></div><div class="correct"><p>git push</p></div><div class=""><p>git commit</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 4</div>
+            <div class="question-text"><p><span>Вы работаете в большой команде, которая выпускает новые версии программного обеспечения каждый месяц и поддерживает предыдущие версии с исправлениями ошибок. Какая стратегия ветвления лучше всего подходит для организации этого процесса?</span></p></div>
+        <div class="answers"><div class=""><p><span>GitHub Flow</span></p></div><div class=""><p><span>Trunk-Based Development</span></p></div><div class="correct"><p><span>Gitflow</span></p></div><div class=""><p><span>Feature Branching</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 5</div>
+            <div class="question-text"><p><span>Какие элементы обязательно содержит коммит в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Сообщение коммита, список измененных файлов и имя автора</span></p></div><div class=""><p><span>Список изменений, имя автора, дата коммита и ссылка на родительский коммит</span></p></div><div class=""><p><span>Сообщение коммита, список измененных файлов, имя автора, дата коммита и SHA-1 хеш</span></p></div><div class="correct"><p><span>Все вышеперечисленное</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 5</div>
+            <div class="question-text"><p><span>Какие ветки обычно используются в Gitflow? (Выберите все подходящие ответы)</span></p></div>
+        <div class="answers"><div class="correct"><p><span>master</span></p></div><div class="correct"><p><span>develop</span></p></div><div class="correct"><p><span>feature/*</span></p></div><div class="correct"><p><span>release/*</span></p></div><div class="correct"><p><span>hotfix/*</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 6</div>
+            <div class="question-text"><p><span id="docs-internal-guid-1d5cb546-7fff-dd5f-cc40-5e87e34f4000"><span>Вы нашли файл </span><span>secret_passwords.txt</span><span>, но он не должен попасть в репозиторий. Как его спрятать?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 6</div>
+            <div class="question-text"><p><span>Что такое репозиторий (repository) в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Локальная копия веб-сайта</span></p></div><div class="correct"><p><span>Хранилище файлов и их истории изменений</span></p></div><div class=""><p><span>Облачное хранилище файлов</span></p></div><div class=""><p><span>Инструмент для автоматической сборки проекта</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 6</div>
+            <div class="question-text"><p><span>В чем заключается основное отличие GitHub Flow от Gitflow?</span></p></div>
+        <div class="answers"><div class=""><p><span>GitHub Flow более сложная и многословная, чем Gitflow.</span></p></div><div class="correct"><p><span>GitHub Flow более простая и ориентирована на непрерывную интеграцию и доставку.</span></p></div><div class=""><p><span>Gitflow не использует ветки feature. d) GitHub Flow не использует ветки develop.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 7</div>
+            <div class="question-text"><p><span id="docs-internal-guid-bd790659-7fff-94b4-8127-dff552032cb7"><span>Как создать ветку </span><span>secret-feature</span><span> и сразу переключиться на нее?</span></span></p></div>
+        <div class="answers"><div class=""><p>a</p></div><div class=""><p>b</p></div><div class="correct"><p>c</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 7</div>
+            <div class="question-text"><p><span>Какая ветка в GitHub Flow всегда содержит код, готовый к развертыванию?</span></p></div>
+        <div class="answers"><div class=""><p><span>develop</span></p></div><div class="correct"><p><span>master</span></p></div><div class=""><p><span>feature/*</span></p></div><div class=""><p><span>release/*</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 8</div>
+            <div class="question-text"><p dir="ltr"><span>Вы не закончили работу, но нужно срочно переключиться на другую ветку. Как сохранить изменения?</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 8</div>
+            <div class="question-text"><p><span>В чем суть стратегии ветвления Trunk-Based Development (TBD)?</span></p></div>
+        <div class="answers"><div class=""><p><span>Разработка ведется в отдельных ветках, которые долго не вливаются в основную ветку.</span></p></div><div class="correct"><p><span>Разработка ведется непосредственно в главной ветке (trunk) небольшими, частыми коммитами.</span></p></div><div class=""><p><span>Разработка ведется с использованием большого количества веток для каждой фичи, релиза и хотфикса.</span></p></div><div class=""><p><span>Trunk-Based Development — это стратегия, не использующая ветки вообще.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 9</div>
+            <div class="question-text"><p dir="ltr"><span>Как переименовать последний коммит?</span></p></div>
+        <div class="answers"><div class="correct"><p>a</p></div><div class="correct"><p>b</p></div><div class=""><p>c</p></div><div class=""><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 9</div>
+            <div class="question-text"><p><span>Как Git хранит блоб-файлы?</span></p></div>
+        <div class="answers"><div class=""><p><span>В виде обычных файлов в файловой системе</span></p></div><div class=""><p><span>Как сжатые и зашифрованные данные в базе данных</span></p></div><div class="correct"><p><span>Как объекты с уникальным SHA-1 хешем, идентифицирующим их содержимое</span></p></div><div class=""><p><span>Как ссылки на файлы в рабочем каталоге</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> 9</div>
+            <div class="question-text"><p><span>Предположим, вы выполнили git rebase master </span><code></code><span>в своей локальной ветке feature</span><code></code><span>. Во время rebase возник конфликт в файле myfile.txt</span><span>. Вы разрешили конфликт, добавили изменения в индекс (git add myfile.txt</span><span>) и выполнили git rebase --continue</span><code></code><span>. Что произойдет, если во время следующего этапа rebase возникнет конфликт в том же файле myfile.txt</span><code></code><span>, но </span><em>другой</em><span> части файла?</span></p></div>
+        <div class="answers"><div class=""><p><span>Git автоматически применит предыдущее разрешение конфликта.</span></p></div><div class=""><p><span>Git выдаст ошибку и прервет rebase.</span></p></div><div class="correct"><p><span>Git снова запросит разрешение конфликта в файле myfile.txt</span><code><br /></code></p></div><div class=""><p><span>Git автоматически пропустит этот этап rebase.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> add+status</div>
+            <div class="question-text"><p><span>Что делает команда <code>git add .</code> по отношению к файлам, отображаемым в <code>git status</code>?</span></p></div>
+        <div class="answers"><div class=""><p><span>Удаляет все неотслеживаемые файлы.</span></p></div><div class="correct"><p><span>Добавляет все измененные и неотслеживаемые файлы в индекс.</span></p></div><div class=""><p><span>Коммитит все измененные файлы.</span></p></div><div class=""><p><span>Сравнивает текущие файлы с последним коммитом.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> cmp commit</div>
+            <div class="question-text"><p>В чем разница между git commit -m "message" и git commit?</p></div>
+        <div class="answers"><div class=""><p><code>git commit -m "message"</code><span> создает новый репозиторий, а </span><code>git commit</code><span> добавляет файлы в текущий репозиторий</span></p></div><div class=""><p><code>git commit -m "message"</code><span> позволяет объединить несколько коммитов, а </span><code>git commit</code><span> создает отдельный коммит для каждого изменения</span></p></div><div class="correct"><p><span><code>git commit -m "message"</code> создает коммит с коротким сообщением, указанным непосредственно в командной строке, а <code>git commit</code> открывает текстовый редактор, где можно написать более подробное сообщение о коммите</span></p></div><div class=""><p><code>git commit -m "message"</code><span> используется для работы с удаленным репозиторием, а </span><code>git commit</code><span> — с локальным</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> git push origin master?</div>
+            <div class="question-text"><p><span>Что делает команда <code>git push origin master</code>?</span></p></div>
+        <div class="answers"><div class=""><p><span>Получает обновления из ветки </span><code>master</code><span> удаленного репозитория </span><code>origin</code><span>.</span></p></div><div class="correct"><p><span>Отправляет локальную ветку </span><code>master</code><span> в удаленный репозиторий </span><code>origin</code><span>.</span></p></div><div class=""><p><span>Создает новую локальную ветку </span><code>master</code><span> в удаленном репозитории </span><code>origin</code><span>.</span></p></div><div class=""><p><span>Удаляет ветку </span><code>master</code><span> из удаленного репозитория </span><code>origin</code><span>.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> git stash</div>
+            <div class="question-text"><p><span>Что делает команда <code>git stash</code>?</span></p></div>
+        <div class="answers"><div class=""><p><span>Удаляет все несохраненные изменения из рабочей директории</span></p></div><div class="correct"><p><span>Временно сохраняет (stash) изменения в рабочей директории, чтобы можно было переключиться на другую ветку или выполнить другую задачу без коммита</span></p></div><div class=""><p><span>Отправляет изменения на удаленный сервер</span></p></div><div class=""><p><span>Объединяет две ветки</span></p></div><div class=""><p><span>Создает новую ветку</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> git status?</div>
+            <div class="question-text"><p><span>Какую информацию отображает команда <code>git status</code>?</span></p></div>
+        <div class="answers"><div class=""><p><span>Список всех коммитов в репозитории</span></p></div><div class="correct"><p><span>Статус файлов в рабочей директории и индексе</span></p></div><div class=""><p><span>Список удаленных репозиториев</span></p></div><div class=""><p><span>Текущую ветку и количество коммитов в ней</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Kanban плюсы</div>
+            <div class="question-text"><p><span>В каких ситуациях Kanban может быть более предпочтительным, чем Scrum? <br /></span><span><br /></span></p></div>
+        <div class="answers"><div class="correct"><p>Когда необходимо обеспечить непрерывную поставку небольших обновлений и исправлений</p></div><div class=""><p>Когда требования проекта четко определены и не меняются</p></div><div class="correct"><p>Когда необходимо визуализировать рабочий процесс</p></div><div class=""><p>Когда требуется четкое планирование на основе спринтов</p></div><div class="correct"><p>Когда команда имеет высокую степень самоорганизации и может самостоятельно принимать решения о приоритетах</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ScrumKanban1</div>
+            <div class="question-text"><p>Выберите верное утверждение:<br /><span>a) Scrum использует спринты с фиксированной длиной, Kanban фокусируется на непрерывном потоке работы. <br />b) Scrum требует наличия Scrum-мастера, в то время как Kanban не имеет жестко определенных ролей. <br />c) Kanban использует доски Kanban для визуализации задач, а Scrum - нет. <br />d) </span><span>Все вышеперечисленное.</span></p></div>
+        <div class="answers"><div class=""><p>а</p></div><div class=""><p>b</p></div><div class=""><p>c</p></div><div class="correct"><p>d</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> uname</div>
+            <div class="question-text"><p>Команда <span id="docs-internal-guid-a6f76873-7fff-6933-773b-49e3d3cffb9c"><span>uname:</span></span></p></div>
+        <div class="answers"><div class="correct"><p><span id="docs-internal-guid-d618e4a7-7fff-e113-7add-cc58e3ebe6f9"><span>Выводит информацию о системе.</span></span></p></div><div class=""><p>Выводит имя хоста</p></div><div class=""><p><span id="docs-internal-guid-123dce73-7fff-342e-a66f-977302dc9012"><span>Выводит имя текущего пользователя</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> waterfall1</div>
+            <div class="question-text"><p><span>В методологии Waterfall изменения в требованиях, выявленные на этапе тестирования, легко и быстро вносятся в проект.</span></p></div>
+        <div class="answers"><div class=""><p>Правда</p></div><div class="correct"><p>Ложь</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> whoami</div>
+            <div class="question-text"><p>Команда <span id="docs-internal-guid-da3d51d9-7fff-f670-fa33-080a4a4cc55f"><span>whoami</span></span></p></div>
+        <div class="answers"><div class="correct"><p><span id="docs-internal-guid-84edc0af-7fff-22ca-7ffd-9f6f3f3d7f12"><span>Выводит имя текущего пользователя</span></span></p></div><div class=""><p><span id="docs-internal-guid-63f0b07e-7fff-33cb-3bef-1841670d0bd4"><span>Выводит имя хоста</span></span></p></div><div class=""><p><span id="docs-internal-guid-36d92fda-7fff-5117-8957-46d3f2d4ffdc"><span>Выводит информацию о системе</span></span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ветки git</div>
+            <div class="question-text"><p><span>Какая основная цель использования веток в системе контроля версий, такой как Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Увеличение размера репозитория</span></p></div><div class="correct"><p><span>Разработка новых функций, исправление багов и проведение экспериментов, не влияя на стабильность основной кодовой базы</span></p></div><div class=""><p><span>Ускорение работы команды</span></p></div><div class=""><p><span>Объединение нескольких репозиториев в один</span></p></div><div class=""><p><span>Улучшение скорости работы с Git</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Вы написали отличное сообщение коммита, но случайно допустили опечатку. Какую команду можно использовать, чтобы исправить это сообщение?</div>
+            <div class="question-text"><p><span>Вы написали отличное сообщение коммита, но случайно допустили опечатку. Какую команду можно использовать, чтобы исправить это сообщение?</span></p></div>
+        <div class="answers"><div class="correct"><p>git commit --amend -m "Новое описание"</p></div><div class=""><p>git commit --amend "Старое описание" -m "Новое описание"</p></div><div class=""><p>git commit --rewrite -m "Новое описание"</p></div><div class=""><p>git commit -m "Новое описание"</p></div><div class=""><p>git commit -rewrite "Старое описание" -m "Новое описание"</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Жизненный цикл программного обеспечения</div>
+            <div class="question-text"><p>Согласны ли вы с утверждением?<br />Жизненный цикл программного обеспечения (ПО) — это процесс, который охватывает все этапы разработки, от первоначальной идеи до поставки продукта заказчику. </p></div>
+        <div class="answers"><div class=""><p>Да</p></div><div class="correct"><p>Нет</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЖЦ ПО</div>
+            <div class="question-text"><p>Какое из следующих определений наиболее точно описывает понятие “жизненный цикл программного обеспечения (ПО)”?</p></div>
+        <div class="answers"><div class=""><p>Процесс написания кода для программы.</p></div><div class=""><p>Процесс тестирования программы на ошибки.</p></div><div class="correct"><p>Совокупность этапов разработки, эксплуатации и вывода из эксплуатации программного обеспечения.</p></div><div class=""><p>Процесс проектирования интерфейса программного обеспечения.</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> История коммитов</div>
+            <div class="question-text"><p>Как посмотреть историю коммитов?</p></div>
+        <div class="answers"><div class=""><p><span>git add</span></p></div><div class=""><p><span>git push</span></p></div><div class="correct"><p>git log</p></div><div class=""><p><span>git commit</span></p></div><div class=""><p><span>git checkout</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Манифест1</div>
+            <div class="question-text"><p>Манифест НЕТ ТЗ - НЕТ ПРОДУКТА относится:</p></div>
+        <div class="answers"><div class="correct"><p>к водопадной модели</p></div><div class=""><p>в agile модели</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Манифест2</div>
+            <div class="question-text"><p>Манифест КАЧЕСТВО ПРОДУКТА ВАЖНЕЕ ДОКУМЕНТАЦИИ относится</p></div>
+        <div class="answers"><div class=""><p>к водопадной методологии</p></div><div class="correct"><p>к гибкой методологии</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> переключение ветки</div>
+            <div class="question-text"><p>Какая команда используется для переключения между ветками в Git?</p>
+<p> </p></div>
+        <div class="answers"><div class=""><p><span>git branch</span></p></div><div class=""><p><span>git commit</span></p></div><div class=""><p><span>git merge</span></p></div><div class="correct"><p>git checkout</p></div><div class=""><p><span>git push</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> переключение с конфликтом</div>
+            <div class="question-text"><p><span>Можно ли переключиться на ветку, в которой есть незакоммиченные изменения, которые конфликтуют с содержимым текущей ветки?</span></p></div>
+        <div class="answers"><div class=""><p><span>Да, Git автоматически разрешит конфликты</span></p></div><div class=""><p><span>Да, Git переключится на ветку и перезапишет все локальные изменения</span></p></div><div class="correct"><p><span>Нет, Git выдаст ошибку, так как переключение приведет к потере изменений или созданию конфликта</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> переключились на ветку dev</div>
+            <div class="question-text"><p><span>Вы переключились на ветку <code>dev</code> и внесли изменения. Что нужно сделать <em>перед </em>переключением на ветку <code>master</code>, если вы хотите сохранить эти изменения?</span></p></div>
+        <div class="answers"><div class=""><p><span>Ничего, Git автоматически сохранит изменения</span></p></div><div class=""><p><span>Выполнить </span><code>git push dev</code></p></div><div class=""><p><span>Выполнить </span><code>git stash pop</code></p></div><div class="correct"><p><span>Закоммитить эти изменения (<code>git commit</code>). Или использовать <code>git stash</code>, если не хотите коммитить сейчас</span></p></div><div class=""><p><span>Выполнить </span><code>git merge dev</code></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ПО Общего назначения</div>
+            <div class="question-text"><p>Выберите один или несколько примеров Прикладного ПО Общего назначения</p></div>
+        <div class="answers"><div class=""><p><span>Проводник (File Explorer) в Windows</span></p></div><div class="correct"><p><span>Chrome</span></p></div><div class="correct"><p><span>Excel</span></p></div><div class="correct"><p>VLC Media Player</p></div><div class=""><p>Windows 10</p></div><div class=""><p>MacOS</p></div><div class=""><p>Драйверы для звуковых карт</p></div><div class=""><p><span>BIOS</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Проектирование</div>
+            <div class="question-text"><p><span>Что является основной целью фазы “Проектирование” в жизненном цикле разработки программного обеспечения?</span></p></div>
+        <div class="answers"><div class=""><p><span>Написание кода программного обеспечения.</span></p></div><div class=""><p><span>Определение пользовательских требований.</span></p></div><div class="correct"><p><span>Создание архитектуры и структуры программного обеспечения.</span></p></div><div class=""><p><span>Выявление ошибок и их исправление.</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> системное ПО</div>
+            <div class="question-text"><p>Выберите один или несколько примеров Системного ПО:</p></div>
+        <div class="answers"><div class="correct"><p>windows 11</p></div><div class="correct"><p>windows 7</p></div><div class="correct"><p>Android</p></div><div class="correct"><p>Драйвер для принтера Canon</p></div><div class="correct"><p>Утилита для форматирования дисков</p></div><div class=""><p>Word</p></div><div class=""><p>C++</p></div><div class=""><p>Paint</p></div><div class=""><p>1C: Платформа</p></div><div class=""><p>Adobe Photoshop</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Что делает команда git merge?</div>
+            <div class="question-text"><p><span>Что делает команда <code>git merge</code>?</span></p></div>
+        <div class="answers"><div class=""><p><span>Удаляет ветку</span></p></div><div class="correct"><p><span>Объединяет изменения из одной ветки в другую</span></p></div><div class=""><p><span>Создает новый коммит</span></p></div><div class=""><p><span>Отправляет изменения в удаленный репозиторий</span></p></div><div class=""><p><span>Создает новую ветку</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Что такое “конфликт” в Git?</div>
+            <div class="question-text"><p><span>Что такое “конфликт” в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Ситуация, когда два пользователя пытаются отправить изменения в одну и ту же ветку одновременно</span></p></div><div class="correct"><p><span>Ситуация, когда Git не может автоматически слить изменения из двух разных веток</span></p></div><div class=""><p><span>Ошибка в коде</span></p></div><div class=""><p><span>Ситуация, когда удаленный репозиторий недоступен</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Что такое Scrum?</div>
+            <div class="question-text"><p><span>Что такое Scrum?</span></p></div>
+        <div class="answers"><div class=""><p><span>Язык программирования</span></p></div><div class=""><p><span>Язык программирования, который позволяет быстро создавать масштабируемые приложения с использованием искусственного интеллекта.</span></p></div><div class="correct"><p><span>Фреймворк (framework) для реализации Agile, использующий спринты, роли (Scrum Master, Product Owner, Development Team) и ритуалы (Daily Scrum, Sprint Planning, Sprint Review, Sprint Retrospective)</span></p></div><div class=""><p><span>Строгий каскадный процесс, который необходимо соблюдать для всех этапов разработки ПО, чтобы избежать ошибок</span></p></div><div class=""><p><span>Система, в которой команда разработчиков работает изолированно, не общаясь с Product Owner’ом, так как Product Owner все равно ничего не понимает в технической стороне, и его задача - просто согласовывать конечный результат</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Что такое ветка (branch) в Git?</div>
+            <div class="question-text"><p><span>Что такое ветка (branch) в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Удаленный репозиторий</span></p></div><div class=""><p><span>Команда для добавления изменений</span></p></div><div class="correct"><p><span>Независимая линия разработки, позволяющая работать над изменениями изолированно</span></p></div><div class=""><p><span>Сообщение, описывающее коммит</span></p></div><div class=""><p><span>Индекс (staging area)</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> 15</div>
+            <div class="question-text"><p>Команда git</p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> git checkout, checkout</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> 16</div>
+            <div class="question-text"><p>)</p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> fast-forward merge, fast forward merge</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> 5</div>
+            <div class="question-text"><p><span>??? – это процесс поиска и исправления ошибок или неполадок в исходном коде какого-либо программного обеспечения.<br /><br />В качестве ответа укажите ОДНО пропущенное слово</span></p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> Отладка, отладка</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> 7</div>
+            <div class="question-text"><p><span>Представьте, что вы работаете над файлом </span><code>my_file.txt</code><span>, и вы только что внесли в него изменения. Теперь вы хотите сохранить эти изменения в репозитории. Используйте </span><span>одну</span><span>команду Git, чтобы добавить изменения в </span><code>my_file.txt</code><span> в область подготовленных изменений (staging area).</span></p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> git add ., git add my_file.txt</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> 8</div>
+            <div class="question-text"><p>Вы хотите получить локальную копию репозитория с названием “my_project”, расположенного по адресу <code>https://gitlab.com/my_username/my_project</code>. Используйте одну команду Git, чтобы клонировать этот репозиторий в текущую директорию.</p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> git clone https://gitlab.com/my_username/my_project.git, git clone</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> Пропуск 1</div>
+            <div class="question-text"><p dir="ltr"><span>Что пропущено?</span></p>
+<p dir="ltr"><span><br /><strong>Разработка </strong></span><strong>=  анализ + ??? + программирование + тестирование + отладка</strong><br /><br /><br /></p>
+<p dir="ltr">В качестве ответа укажите ОДНО СЛОВО</p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> Проектирование, проектирование</p><p><em>Регистр букв не учитывается</em></p></div></div>
+    </body>
+    </html>
+    

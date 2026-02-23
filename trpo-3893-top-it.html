@@ -1,0 +1,102 @@
+
+    <html>
+    <head>
+        <title>Questions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+            .question-type { color: #666; font-size: 0.9em; margin-bottom: 5px; }
+            .answers { margin-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #999; }
+            .correct { color: green; font-weight: bold; }
+            .calculated-info, .numerical-info, .shortanswer-info, .gapselect-info, .ddwtos-info { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+            .gap-group { margin: 10px 0; padding: 10px; background: #fff; border-left: 3px solid #ccc; }
+            .gap-option { padding: 5px; margin: 3px 0; }
+            .gap-option.correct { color: green; font-weight: bold; background: #e8f5e9; }
+            .dragbox { display: inline-block; padding: 5px 10px; margin: 3px; background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
+            .dragbox.correct { background: #c8e6c9; border-color: green; color: green; font-weight: bold; }
+            .correct-sequence { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 3px solid green; }
+            img { max-width: 100%; height: auto; }
+        </style>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+    
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> ddwtos | <strong>Название:</strong> ЗО_8</div>
+            <div class="question-text"><p>Git. <span>Как добавить файлы в staging area?</span></p>
+<p><span>Перетащите карточки, которые составят правильную команду:</span></p>
+<p><span>Ваш ответ: [[1]] [[2]]<br /><br /><br />Возможные карточки:<br /><br /><br /></span></p></div>
+        <div class="ddwtos-info"><p><strong>Позиции:</strong></p><p><strong>Доступные варианты для перетаскивания:</strong></p><div style="padding: 10px;"><span class="dragbox">git</span><span class="dragbox">add .</span><span class="dragbox">merge</span><span class="dragbox">commit ‑m "hahaha"</span><span class="dragbox">append sa *.c</span></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_1</div>
+            <div class="question-text"><p class="ds-markdown-paragraph"><span>Что такое коммит (commit) в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Это команда для создания новой ветки в репозитории</span></p></div><div class=""><p><span>Это команда, которая удаляет файл из репозитория</span></p></div><div class=""><p><span>Это процесс слияния (merge) двух веток в Git</span></p></div><div class=""><p><span>Это временное хранилище, где хранятся изменения перед добавлением их в репозиторий</span></p></div><div class="correct"><p><span>Это снимок (snapshot) текущего состояния файлов в репозитории в определенный момент времени, сопровождаемый сообщением, описывающим внесённые изменения</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_10</div>
+            <div class="question-text"><p dir="ltr"><span>Какая модель ветвления изображена?</span></p>
+<p dir="ltr"><img src="images-trpo-3893-top-it/pasted-from-clipboard.png" alt="" width="993" height="433" /></p></div>
+        <div class="answers"><div class=""><p><span id="docs-internal-guid-216fb960-7fff-1719-a45c-4ba60ed189ee"><span>Trunk-based</span></span></p></div><div class="correct"><p><span id="docs-internal-guid-e8b203fd-7fff-31f4-e9fa-c5001eddf166"><span>Gitflow</span></span></p></div><div class=""><p><span id="docs-internal-guid-187131a4-7fff-5437-93c2-11356d88027c"><span>GitSimple</span></span></p></div><div class=""><p><span>OneFlow</span></p></div><div class=""><p>Нет правильного ответа</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_11</div>
+            <div class="question-text"><p><span>Вы переключились на ветку </span><code>dev</code><span> и внесли изменения. Что нужно сделать </span><em>перед </em><span>переключением на ветку </span><code>master</code><span>, если вы хотите сохранить эти изменения?</span></p></div>
+        <div class="answers"><div class=""><p><span>Выполнить </span><code>git stash pop</code></p></div><div class=""><p><span>Выполнить </span><code>git push dev</code></p></div><div class="correct"><p><span>Закоммитить эти изменения (</span><code>git commit</code><span>). Или использовать </span><code>git stash</code><span>, если не хотите коммитить сейчас</span></p></div><div class=""><p><span>Ничего, Git автоматически сохранит изменения</span></p></div><div class=""><p><span>Выполнить </span><code>git merge dev</code></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_12</div>
+            <div class="question-text"><p><span>Вы написали отличное сообщение коммита, но случайно допустили опечатку. Какую команду можно использовать, чтобы исправить это сообщение?</span></p></div>
+        <div class="answers"><div class=""><p><span>git commit --rewrite -m "Новое описание"</span></p></div><div class=""><p><span>git commit --amend "Старое описание" -m "Новое описание"</span></p></div><div class=""><p><span>git commit -rewrite "Старое описание" -m "Новое описание"</span></p></div><div class=""><p><span>git commit -m "Новое описание"</span></p></div><div class="correct"><p>git commit --amend -m "Новое описание"</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_14</div>
+            <div class="question-text"><p><span>Какая команда используется для переключения между ветками в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>git push</span></p></div><div class=""><p><span>git merge</span></p></div><div class=""><p><span>git commit</span></p></div><div class="correct"><p><span>git checkout</span></p></div><div class=""><p><span>git branch</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_15</div>
+            <div class="question-text"><pre><span style="font-family: arial, helvetica, sans-serif;">Вы сохранили изменения через <code>git stash</code>, затем изменили тот же файл в рабочей директории. Что произойдет при <code>git stash pop</code>?</span><span style="font-family: arial, helvetica, sans-serif;"><br /></span></pre></div>
+        <div class="answers"><div class=""><pre><span>Git объединит изменения автоматически.</span></pre></div><div class="correct"><pre><span>Возникнет конфликт, который нужно разрешить вручную.</span></pre></div><div class=""><pre><span>Ваши текущие изменения будут удалены.</span></pre></div><div class=""><pre><span>Git предложит отменить изменения.</span></pre></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_16</div>
+            <div class="question-text"><pre><span class="nolink" style="font-family: arial, helvetica, sans-serif;">Вы случайно удалили ветку <code>experiment</code>. Как восстановить ее последний коммит?</span></pre></div>
+        <div class="answers"><div class="correct"><pre>Использовать <code>git reflog</code> для поиска хеша коммита.</pre></div><div class=""><pre>Выполнить <code>git undo delete experiment</code>.</pre></div><div class=""><pre>Скопировать хеш из лога удаленной ветки.</pre></div><div class=""><pre>Это невозможно.</pre></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_17</div>
+            <div class="question-text"><pre><span style="font-family: arial, helvetica, sans-serif;">Что делает команда <code>git merge</code>?</span></pre></div>
+        <div class="answers"><div class=""><p><span>Удаляет ветку</span></p></div><div class=""><p><span>Отправляет изменения в удаленный репозиторий</span></p></div><div class=""><p><span>Создает новую ветку</span></p></div><div class=""><p><span>Создает новый коммит</span></p></div><div class="correct"><p><span>Объединяет изменения из одной ветки в другую</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_2</div>
+            <div class="question-text"><p><span>Что такое “конфликт” в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Ситуация, когда два пользователя пытаются отправить изменения в одну и ту же ветку одновременно</span></p></div><div class=""><p><span>Ошибка в коде</span></p></div><div class="correct"><div id="q678064:16_answer2_label" class="d-flex w-auto" data-region="answer-label">
+<div class="flex-fill ml-1">
+<p>Ситуация, когда Git не может автоматически слить изменения из двух разных веток</p>
+</div>
+</div></div><div class=""><p><span>Ситуация, когда удаленный репозиторий недоступен</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_3</div>
+            <div class="question-text"><p><span>Какая основная цель использования веток в системе контроля версий, такой как Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Ускорение работы команды</span></p></div><div class="correct"><p><span>Разработка новых функций, исправление багов и проведение экспериментов, не влияя на стабильность основной кодовой базы</span></p></div><div class=""><p><span>Улучшение скорости работы с Git</span></p></div><div class=""><p><span>Увеличение размера репозитория</span></p></div><div class=""><p><span>Объединение нескольких репозиториев в один</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_4</div>
+            <div class="question-text"><p><span>Какой этап жизненного цикла следует после «Проектирования»?</span></p></div>
+        <div class="answers"><div class=""><p><span>Тестирование</span></p></div><div class="correct"><p><span>Разработка</span></p></div><div class=""><p><span>Сопровождение</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_5</div>
+            <div class="question-text"><p><span>В чем основная разница между локальным и удаленным репозиторием в Git?</span></p></div>
+        <div class="answers"><div class=""><p><span>Локальный репозиторий хранит только исходный код, а удаленный репозиторий хранит только скомпилированный код</span></p></div><div class=""><p><span>Локальный репозиторий хранится на сервере, а удаленный репозиторий – на вашем компьютере</span></p></div><div class=""><p><span>Локальный репозиторий используется для тестирования кода, а удаленный репозиторий – для развертывания в продакшн</span></p></div><div class=""><p><span>Удаленный репозиторий содержит только историю изменений, а локальный репозиторий – только текущую версию кода</span></p></div><div class="correct"><p><span>Локальный репозиторий хранится на вашем компьютере, а удаленный репозиторий – на сервере, позволяя обмениваться кодом с другими разработчиками и хранить резервные копии</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_6</div>
+            <div class="question-text"><p><span>Что такое Scrum?</span></p></div>
+        <div class="answers"><div class="correct"><p><span>Фреймворк (framework) для реализации Agile, использующий спринты, роли (Scrum Master, Product Owner, Development Team) и ритуалы (Daily Scrum, Sprint Planning, Sprint Review, Sprint Retrospective)</span></p></div><div class=""><p><span>Строгий каскадный процесс, который необходимо соблюдать для всех этапов разработки ПО, чтобы избежать ошибок</span></p></div><div class=""><p><span>Язык программирования</span></p></div><div class=""><p><span>Язык программирования, который позволяет быстро создавать масштабируемые приложения с использованием искусственного интеллекта.</span></p></div><div class=""><p><span>Система, в которой команда разработчиков работает изолированно, не общаясь с Product Owner’ом, так как Product Owner все равно ничего не понимает в технической стороне, и его задача - просто согласовывать конечный результат</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_7</div>
+            <div class="question-text"><p><span>Какие директивы препроцессора обычно используются вместе для создания “header guards” (защиты от множественного включения) в C/C++?</span></p></div>
+        <div class="answers"><div class=""><p><span>#include, #define, #endif</span></p></div><div class=""><p><span>#ifdef, #else, #endif</span></p></div><div class="correct"><p><span>#ifndef, #define, #endif</span></p></div><div class=""><p><span>#pragma once, #include</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> ЗО_9</div>
+            <div class="question-text"><p><span>Можно ли переключиться на ветку, в которой есть незакоммиченные изменения, которые конфликтуют с содержимым текущей ветки?</span></p></div>
+        <div class="answers"><div class="correct"><p><span>Нет, Git выдаст ошибку, так как переключение приведет к потере изменений или созданию конфликта</span></p></div><div class=""><p><span>Да, Git переключится на ветку и перезапишет все локальные изменения</span></p></div><div class=""><p><span>Да, Git автоматически разрешит конфликты</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> ЗО_13</div>
+            <div class="question-text"><p><span>Какой файл содержит информацию об игнорируемых файлах и папках в репозитории?</span></p>
+<p>Введите одно слово, если необходимо используйте знаки .!?* без пробелов (но если вы забудете ответ все равно зачтется)<br />Регистр неважен</p></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> .gitignore, gitignore</p><p><em>Регистр букв не учитывается</em></p></div></div>
+    </body>
+    </html>
+    
