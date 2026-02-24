@@ -1,0 +1,58 @@
+
+    <html>
+    <head>
+        <title>Questions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+            .question-type { color: #666; font-size: 0.9em; margin-bottom: 5px; }
+            .answers { margin-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #999; }
+            .correct { color: green; font-weight: bold; }
+            .incorrect { color: #999; text-decoration: line-through; }
+            .calculated-info, .numerical-info, .shortanswer-info, .gapselect-info, .ddwtos-info, .cloze-info, .truefalse-info { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+            .gap-group { margin: 10px 0; padding: 10px; background: #fff; border-left: 3px solid #ccc; }
+            .gap-option { padding: 5px; margin: 3px 0; }
+            .gap-option.correct { color: green; font-weight: bold; background: #e8f5e9; }
+            .dragbox { display: inline-block; padding: 5px 10px; margin: 3px; background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
+            .dragbox.correct { background: #c8e6c9; border-color: green; color: green; font-weight: bold; }
+            .correct-sequence { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 3px solid green; }
+            .cloze-subquestion { background: #fff; padding: 10px; margin: 10px 0; border-left: 3px solid #2196F3; }
+            .tf-answer { font-size: 1.2em; padding: 10px; margin: 5px 0; }
+            img { max-width: 100%; height: auto; }
+        </style>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+    
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> Вопрос 6 (Эссе)</div>
+            <div class="question-text"><p>Вопрос для оценки лабораторных работ. Пропустите его в тесте, либо укажите куда планируете загрузить работы (github, ЭИОС, другое)</p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Вопрос 2</div>
+            <div class="question-text"><p>Для чего используется JDBC?</p></div>
+        <div class="answers"><div class="correct"><p>Интерфейсы и классы для подключения баз данных</p></div><div class=""><p>Субинтерфейс для обеспечения работы JVM на Linux</p></div><div class=""><p>Driver PnP-устройств</p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> multichoice | <strong>Название:</strong> Вопрос 5</div>
+            <div class="question-text"><p>Что выведет такой код? Выберите правильный ответ!</p>
+<p> </p>
+<pre style="background-color: #2b2b2b; color: #a9b7c6; font-family: 'JetBrains Mono',monospace; font-size: 9,8pt;"><span style="color: #cc7832;">public class </span>main {<br />    <span style="color: #cc7832;">public static void </span><span style="color: #ffc66d;">main</span>(String[] args) {<br />        <span style="color: #cc7832;">int </span>i = <span style="color: #6897bb;">0</span><span style="color: #cc7832;">;<br /></span><span style="color: #cc7832;">        do </span>{<br />            i++<span style="color: #cc7832;">;<br /></span><span style="color: #cc7832;">            if </span>(i % <span style="color: #6897bb;">2 </span>!= <span style="color: #6897bb;">0</span>) {<br />                <span style="color: #cc7832;">continue;<br /></span>}<br />            System.<span style="color: #9876aa; font-style: italic;">out</span>.print(i + <span style="color: #6a8759;">" "</span>)<span style="color: #cc7832;">;<br /></span>} <span style="color: #cc7832;">while </span>(i &lt; <span style="color: #6897bb;">6</span>)<span style="color: #cc7832;">;<br /></span>}<br />}</pre></div>
+        <div class="answers"><div class="correct"><p><span>2 4 6</span></p></div><div class=""><p><span> 1 2 3 4 5 6</span></p></div><div class=""><p><span>1 3 5</span></p></div><div class=""><p><span>2 4</span></p></div></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> Вопрос 3</div>
+            <div class="question-text"><p>Какой результат вывода будет у этого кода? </p>
+<p> </p>
+<pre style="background-color: #2b2b2b; color: #a9b7c6; font-family: 'JetBrains Mono',monospace; font-size: 9,8pt;"><br />    <span style="color: #cc7832;">int </span>count = <span style="color: #6897bb;">0</span><span style="color: #cc7832;">;<br /></span><span style="color: #cc7832;">    for </span>(<span style="color: #cc7832;">int </span>i = <span style="color: #6897bb;">1</span><span style="color: #cc7832;">; </span>i &lt;= <span style="color: #6897bb;">5</span><span style="color: #cc7832;">; </span>i++) {<br />        <span style="color: #cc7832;">if </span>(i % <span style="color: #6897bb;">2 </span>== <span style="color: #6897bb;">0</span>) {<br />            <span style="color: #cc7832;">continue;<br /></span>}<br />        count += i<span style="color: #cc7832;">;<br /></span>}<br />    System.<span style="color: #9876aa; font-style: italic;">out</span>.println(count)<span style="color: #cc7832;">;</span></pre></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> 9</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> shortanswer | <strong>Название:</strong> Вопрос 4</div>
+            <div class="question-text"><p>Что выведет такой код? Укажите ответ перечислением через пробел.</p>
+<pre style="background-color: #2b2b2b; color: #a9b7c6; font-family: 'JetBrains Mono',monospace; font-size: 9,8pt;"><span style="color: #cc7832;">public class </span>main {<br />    <span style="color: #cc7832;">public static void </span><span style="color: #ffc66d;">main</span>(String[] args) {<br />        <span style="color: #cc7832;">int </span>x = <span style="color: #6897bb;">10</span><span style="color: #cc7832;">;<br /></span><span style="color: #cc7832;">        while </span>(x &gt; <span style="color: #6897bb;">0</span>) {<br />            <span style="color: #cc7832;">if </span>(x == <span style="color: #6897bb;">5</span>) {<br />                <span style="color: #cc7832;">break;<br /></span>}<br />            System.<span style="color: #9876aa; font-style: italic;">out</span>.print(x + <span style="color: #6a8759;">" "</span>)<span style="color: #cc7832;">;<br /></span>x -= <span style="color: #6897bb;">2</span><span style="color: #cc7832;">;<br /></span>}<br />    }<br />}</pre></div>
+        <div class="shortanswer-info"><p class="correct"><strong>Правильный ответ:</strong> 10 8 6 4 2, 108642, 10, 8, 6, 4, 2</p><p><em>Регистр букв не учитывается</em></p></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> truefalse | <strong>Название:</strong> Вопрос 1</div>
+            <div class="question-text"><p>Верно ли, что язык Java часто называют компилируемо-интерпретируемым из-за его особенности, которая заключается в необходимости компиляции в специальный байт-код, который в свою очередь может быть интерпретирован JVM (Java Virtual Machine) на целевой системе. </p></div>
+        <div class="truefalse-info"><div class="correct">✓ ВЕРНО</div><div class="incorrect">✗ НЕВЕРНО</div></div></div>
+    </body>
+    </html>
+    
