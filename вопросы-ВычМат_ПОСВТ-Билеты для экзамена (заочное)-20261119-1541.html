@@ -1,0 +1,409 @@
+
+    <html>
+    <head>
+        <title>Questions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+            .question-type { color: #666; font-size: 0.9em; margin-bottom: 5px; }
+            .answers { margin-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #999; }
+            .correct { color: green; font-weight: bold; }
+            .incorrect { color: #999; text-decoration: line-through; }
+            .calculated-info, .numerical-info, .shortanswer-info, .gapselect-info, .ddwtos-info, .cloze-info, .truefalse-info { background: #f0f0f0; padding: 10px; margin: 10px 0; }
+            .gap-group { margin: 10px 0; padding: 10px; background: #fff; border-left: 3px solid #ccc; }
+            .gap-option { padding: 5px; margin: 3px 0; }
+            .gap-option.correct { color: green; font-weight: bold; background: #e8f5e9; }
+            .dragbox { display: inline-block; padding: 5px 10px; margin: 3px; background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
+            .dragbox.correct { background: #c8e6c9; border-color: green; color: green; font-weight: bold; }
+            .correct-sequence { background: #e8f5e9; padding: 10px; margin: 10px 0; border-left: 3px solid green; }
+            .cloze-subquestion { background: #fff; padding: 10px; margin: 10px 0; border-left: 3px solid #2196F3; }
+            .tf-answer { font-size: 1.2em; padding: 10px; margin: 5px 0; }
+            img { max-width: 100%; height: auto; }
+        </style>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+    
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.01</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"> Составьте таблицу значений функции \( y = f(x) = {x^3} \) на интервале [0; 0.8] с шагом</p>
+<p><em><span lang="EN-US">h</span></em> = 0.2 (значения функции округлить до 3-х знаков). По составленной таблице постройте интерполяционный многочлен Лагранжа и найдите \( f(0.5) \). Оцените погрешность полученного значения.</p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.02</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"> Составьте таблицу значений функции \(y = f(x) = \sqrt x\)  на интервале [1; 1.6] с шагом <em><span lang="EN-US">h</span></em> = 0.2 (значения функции округлить до 3-х знаков). По составленной таблице постройте интерполяционный многочлен Ньютона и найдите \(f(1.5)\). Оцените погрешность полученного значения.</p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.03</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr">Округлите сомнительные цифры числа, оставив верные цифры в узком смысле. Определите абсолютную погрешность результата.</p>
+<p><span lang="EN-US">8.3445</span><span lang="EN-US">±</span> 0.0<span lang="EN-US">022</span></p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.04</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Округлите сомнительные цифры числа, оставив верные цифры в узком смысле. Определите абсолютную погрешность результата.</span></p>
+<p>22.553 <span lang="EN-US">±</span> 0.016</p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.05</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Определите, какое равенство точнее (найдите относительные погрешности).</span></p>
+<p>\( \sqrt {30} \approx 5.48 \) или \(\frac{7}{{15}} \approx 0.467 \) .</p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.06</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Округлите сомнительные цифры числа, оставив верные цифры в узком смысле. Определите абсолютную погрешность результата.</span></p>
+<p><span lang="EN-US">2.3485</span><span lang="EN-US">±</span> 0.0<span lang="EN-US">042</span></p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.07</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Составьте таблицу значений функции \( y = f(x) = \sqrt[3]{x} \) на интервале [0; 1.2] с шагом </span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.4 (значения функции округлить до 3-х знаков). По составленной таблице постройте интерполяционный многочлен Ньютона и найдите \( f(1) \). Оцените погрешность полученного значения.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.08</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Вычислите и определите абсолютную и относительную погрешности результата.</span></p>
+<p>\(\frac{{ab}}{{\sqrt[3]{c}}}\), если <em><span lang="EN-US">a</span></em> = 4.160 <span lang="EN-US">±</span> 0.005, <em><span lang="EN-US">b</span></em> = 12.163 <span lang="EN-US">±</span> 0.002, <em><span lang="EN-US">c</span></em> = 55.18 <span lang="EN-US">±</span> 0.01.</p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.09</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Составьте таблицу значений функции \(y = f(x) = \sqrt x \) на интервале [1; 1.6] с шагом </span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.2 (значения функции округлить до 3-х знаков). По составленной таблице постройте интерполяционный многочлен Лагранжа и найдите \(f(1.44)\). Оцените погрешность полученного значения.</span></p>
+<p> </p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.10</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Определите, какое равенство точнее (найдите относительные погрешности).</span></p>
+<p>\( \sqrt {4.8} \approx 2.19 \)  или \( \frac{6}{7} \approx 0.857 \).</p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.11</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Округлите сомнительные цифры числа, оставив верные цифры в узком смысле. Определите абсолютную погрешность результата.</span></p>
+<p><span lang="EN-US">6.4257</span><span lang="EN-US">±</span><span lang="EN-US">0.0024</span></p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.12</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Округлите сомнительные цифры числа, оставив верные цифры в узком смысле. Определите абсолютную погрешность результата.</span></p>
+<p><span lang="EN-US">0.5748</span><span lang="EN-US">±</span> 0.0<span lang="EN-US">034.</span></p>
+<p> </p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.13</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Вычислите и определите абсолютную и относительную погрешности результата.</span></p>
+<p>\({\left( {\frac{{(a + b) \cdot c}}{{m - n}}} \right)^2}\), если <em><span lang="EN-US">a</span></em> = 4.30 <span lang="EN-US">±</span> 0.05, <em><span lang="EN-US">b</span></em> = 7.21 <span lang="EN-US">±</span> 0.02, <em><span lang="EN-US">c</span></em> = 8.20 <span lang="EN-US">±</span> 0.05,  <em><span lang="EN-US">m</span></em>= 12.417 <span lang="EN-US">±</span> 0.003, <em><span lang="EN-US">n</span></em>= 8.370 <span lang="EN-US">±</span> 0.005.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.14</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Определите, какое равенство точнее (найдите относительные погрешности).</span></p>
+<p>\( \sqrt {10.5} \approx 3.24 \) или \( \frac{4}{{17}} \approx 0.235 \).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 1.15</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Определите, какое равенство точнее (найдите относительные погрешности).</span></p>
+<p>\( \sqrt {10} \approx 3.16 \) или \( \frac{{15}}{7} \approx 2.14 \).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p><br /><br /></p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.01</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Методом наименьших квадратов найдите аппроксимирующую функцию вида \( y = ax + b \) для функции, заданной таблично.</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="33">
+<p align="center"><span style="font-size: small;"><em><span lang="EN-US">x</span></em></span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">0</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">1</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">2</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">3</span></p>
+</td>
+</tr>
+<tr>
+<td width="33">
+<p align="center"><span style="font-size: small;"><em><span lang="EN-US">y</span></em></span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">-3</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">2</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">1</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-size: small;" lang="EN-US">4</span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.02</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Для дифференциального уравнения \( y' = 3{x^2} - y,\;y(0) = 0.2 \) выполните 3 шага методом Эйлера (</span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.1) и найдите </span><em style="font-size: 1rem;"><span lang="EN-US">y</span></em><span style="font-size: 1rem;">(0.3).</span></p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.03</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Выполните 3 шага метода Зейделя для системы линейных уравнений и оцените погрешность полученного решения.</span></p>
+<p>$$\left\{ {\begin{array}{*{20}{l}}{5{x_1} + {x_2} + {x_3} = 1}\\{{x_1} + 4{x_2} - {x_3} = 6}\\{ - {x_1} + {x_2} - 3{x_3} = 2}\end{array}} \right.$$</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.04</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Найдите \( \int\limits_2^4 {({x^2} - 3x)dx} \) методом Симпсона, разбив интервал интегрирования на 10 частей. Оцените погрешность полученного значения.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.05</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Отделите корни уравнения аналитически и уточните один из них методом Ньютона, выполнив 3 шага метода. Оцените погрешность полученного результата.</span></p>
+<p>\( {x^3} - 12x - 8 = 0 \).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.06</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Выполните 3 шага метода простой итерации для системы линейных уравнений и оцените погрешность полученного решения.</span></p>
+<p>$$\left\{ {\begin{array}{*{20}{l}}{5{x_1} + {x_2} + {x_3} = 1}\\{{x_1} + 4{x_2} - {x_3} = 6}\\{ - {x_1} + {x_2} - 3{x_3} = 2}\end{array}} \right.$$</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.07</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Отделите корни уравнения аналитически и уточните один из них методом хорд, выполнив 3 шага метода. Оцените погрешность полученного результата.</span></p>
+<p>\( {x^3} - 12x - 8 = 0 \).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.08</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Выполните 3 шага метода золотого сечения для нахождения минимального значения функции \( y = {x^2} - 4x \) на интервале [0; 3]. Оцените погрешность полученного приближения.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.09</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Методом наименьших квадратов найдите аппроксимирующую функцию вида \( y = ax + b \) для функции, заданной таблично.</span></p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;"><em><span lang="EN-US">x</span></em></span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">0</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">1</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">2</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">3</span></p>
+</td>
+</tr>
+<tr>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;"><em><span lang="EN-US">y</span></em></span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">3</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">4</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">2</span></p>
+</td>
+<td width="33">
+<p align="center"><span style="font-family: 'times new roman', times, serif; font-size: small;" lang="EN-US">0</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.10</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Найдите \( \int\limits_1^3 {(4{x^3} + 3x)dx} \) методом трапеций, разбив интервал интегрирования на 10 частей. Оцените погрешность полученного значения.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.11</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Для дифференциального уравнения \( y' = 3{x^2} - y,\;y(0) = 0.4 \) выполните 2 шага методом Рунге-Кутта четвертого порядка (</span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.2) и найдите </span><em style="font-size: 1rem;"><span lang="EN-US">y</span></em><span style="font-size: 1rem;">(0.4).</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.12</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Выполните 3 шага метода золотого сечения для нахождения максимального значения функции \( y = - 3{x^2} + 24x \) на интервале [2; 8]. Оцените погрешность полученного приближения.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.13</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Для дифференциального уравнения \( y' = 4{x^2} + 5y,\;y(1) = 1 \) выполните 3 шага методом Эйлера (</span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.2) и найдите </span><em style="font-size: 1rem;"><span lang="EN-US">y</span></em><span style="font-size: 1rem;">(1.6).</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.14</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Для дифференциального уравнения \( y' = x + 2y,\;y(1) = 0.1 \) выполните 2 шага методом Рунге-Кутта четвертого порядка (</span><em style="font-size: 1rem;"><span lang="EN-US">h</span></em><span style="font-size: 1rem;"> = 0.4) и найдите </span><em style="font-size: 1rem;"><span lang="EN-US">y</span></em><span style="font-size: 1rem;">(1.8).</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+        <div class="question">
+            <div class="question-type"><strong>Тип:</strong> essay | <strong>Название:</strong> 2.15</div>
+            <div class="question-text"><p style="text-align: left;" dir="ltr"><span style="font-size: 1rem;">Отделите корни уравнения аналитически и уточните один из них методом деления пополам, выполнив 3 шага метода. Оцените погрешность полученного результата.</span></p>
+<p>\( {x^3} - 12x - 8 = 0 \).</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p></div>
+        <div style="color: #999;"><em>Тип вопроса "essay" пока не поддерживается полностью</em></div></div>
+    </body>
+    </html>
+    
